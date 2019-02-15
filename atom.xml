@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://woshilishang123.github.io/"/>
-  <updated>2019-02-15T15:34:27.761Z</updated>
+  <updated>2019-02-15T16:07:59.889Z</updated>
   <id>https://woshilishang123.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>jquery学习笔记</title>
+    <link href="https://woshilishang123.github.io/2019/02/15/jquery%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    <id>https://woshilishang123.github.io/2019/02/15/jquery学习笔记/</id>
+    <published>2019-02-15T15:54:46.000Z</published>
+    <updated>2019-02-15T16:07:59.889Z</updated>
+    
+    <content type="html"><![CDATA[<h1><center>jquery学习笔记</center></h1> <p><img src="http://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2015/08/1440764020jquery-logo.jpg" alt="jquery-logo" title="jquery-log"></p><p></p><p><img src="/2019/02/15/jquery学习笔记/jquery-logo.jpg" alt="jquery-本地" title="本地"></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1&gt;&lt;center&gt;jquery学习笔记&lt;/center&gt;&lt;/h1&gt; 
+
+&lt;p&gt;&lt;img src=&quot;http://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2015/08/1440764020jquery-logo.jpg
+      
+    
+    </summary>
+    
+    
+      <category term="jquery" scheme="https://woshilishang123.github.io/tags/jquery/"/>
+    
+  </entry>
   
   <entry>
     <title>tuzi的第一篇博客</title>
