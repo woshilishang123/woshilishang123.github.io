@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[css布局知识点详解]]></title>
+    <url>%2F2019%2F02%2F16%2Fcss%E5%B8%83%E5%B1%80%2F</url>
+    <content type="text"><![CDATA[css布局基础知识常用的布局方法 table表格布局 float浮动＋margin inline-block布局 flexbox布局 盒模型 盒模型从内到外依次是margin（外边距）、border（边框）、padding（内边距）、content（内容）。一般说的width和height是指content（内容）的宽度和高度。 display/position属性作用： &nbsp;&nbsp;· display确定元素的显示类型 ​ &nbsp;&nbsp;&nbsp;· block/inline/inline-block &nbsp;&nbsp;·position确定元素的位置 ​ · static（静态、默认）/relative（相对）/absolute（绝对）/fixed（固定） block 有独立宽高，默认占据一行 inline 和文本一样，默认不会占据一行 inline-block 对外表现像一个inline，对内/内部表现为block。可以有宽高. static静态/默认布局，出现在应该出现的位置。 relativedemo: 12345.demo&#123; position:relative; left:10px; top:10px;&#125; 上述代码块的作用的使class=demo的元素位置相对于其static的位置：离左边10px，里上边10px（向右向下移动10px）。 absolutedemo: 12345.demo&#123; position:absolute; left:80px; top:30px;&#125; 元素一旦设置为absolute布局就从文档流中脱离了，后续的元素的位置不受此元素的影响。 其定位使相对于最近的父级absolute或relative布局的元素位置。 fixeddemo： 12345.demo&#123; position:fixed; left:10px; bottom:10px;&#125; fixed也是脱离文档流的，但其位置使相对于浏览器可视界面的。 注：定位为relative、absolute、fixed布局的元素可以设置z-index属性。z-index属性使元素在 &nbsp;z轴 的位置。使用方法为：z-index：2；数值越大位置越靠“上” flexbox布局 先简单介绍一下用法：父级元素：diaplay：flex；子元素：flex：1 ，2，3，····;flex的数值表示该元素占据的大小。如果子元素要设置为固定宽度：width:80px; flex:none;]]></content>
+      <tags>
+        <tag>-css</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[jquery学习笔记]]></title>
     <url>%2F2019%2F02%2F15%2Fjquery%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%2F</url>
     <content type="text"><![CDATA[jquery学习笔记]]></content>

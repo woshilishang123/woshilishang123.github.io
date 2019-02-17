@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://woshilishang123.github.io/"/>
-  <updated>2019-02-15T16:07:59.889Z</updated>
+  <updated>2019-02-17T04:19:29.016Z</updated>
   <id>https://woshilishang123.github.io/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>css布局知识点详解</title>
+    <link href="https://woshilishang123.github.io/2019/02/16/css%E5%B8%83%E5%B1%80/"/>
+    <id>https://woshilishang123.github.io/2019/02/16/css布局/</id>
+    <published>2019-02-16T11:42:52.000Z</published>
+    <updated>2019-02-17T04:19:29.016Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="css布局基础知识"><a href="#css布局基础知识" class="headerlink" title="css布局基础知识"></a><center>css布局基础知识</center></h1><h2 id="常用的布局方法"><a href="#常用的布局方法" class="headerlink" title="常用的布局方法"></a>常用的布局方法</h2><ol><li><p>table表格布局</p></li><li><p>float浮动＋margin</p></li><li>inline-block布局</li><li>flexbox布局</li></ol><h2 id="盒模型"><a href="#盒模型" class="headerlink" title="盒模型"></a>盒模型</h2><p><img src="/2019/02/16/css布局/盒模型.jpg" alt="盒模型" title="盒模型"></p><p>盒模型从内到外依次是margin（外边距）、border（边框）、padding（内边距）、content（内容）。一般说的width和height是指content（内容）的宽度和高度。</p><h2 id="display-position属性"><a href="#display-position属性" class="headerlink" title="display/position属性"></a>display/position属性</h2><p>作用：</p><p>&nbsp;&nbsp;· display确定元素的显示类型</p><p>​        &nbsp;&nbsp;&nbsp;· block/inline/inline-block</p><p>&nbsp;&nbsp;·position确定元素的位置</p><p>​        · static（静态、默认）/relative（相对）/absolute（绝对）/fixed（固定）</p><h3 id="block"><a href="#block" class="headerlink" title="block"></a>block</h3><p>  有独立宽高，默认占据一行</p><h3 id="inline"><a href="#inline" class="headerlink" title="inline"></a>inline</h3><p>  和文本一样，默认不会占据一行</p><h3 id="inline-block"><a href="#inline-block" class="headerlink" title="inline-block"></a>inline-block</h3><p>  对外表现像一个inline，对内/内部表现为block。可以有宽高.</p><h3 id="static"><a href="#static" class="headerlink" title="static"></a>static</h3><p>静态/默认布局，出现在应该出现的位置。</p><h3 id="relative"><a href="#relative" class="headerlink" title="relative"></a>relative</h3><p>demo:</p><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.demo</span>&#123;</span><br><span class="line">    <span class="attribute">position</span>:relative;</span><br><span class="line"><span class="attribute">left</span>:<span class="number">10px</span>;</span><br><span class="line"><span class="attribute">top</span>:<span class="number">10px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>上述代码块的作用的使class=demo的元素位置相对于其static的位置：离左边10px，里上边10px（向右向下移动10px）。</p><h3 id="absolute"><a href="#absolute" class="headerlink" title="absolute"></a>absolute</h3><p>demo:</p><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.demo</span>&#123;</span><br><span class="line">    <span class="attribute">position</span>:absolute;</span><br><span class="line">    <span class="attribute">left</span>:<span class="number">80px</span>;</span><br><span class="line">    <span class="attribute">top</span>:<span class="number">30px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>元素一旦设置为absolute布局就从文档流中脱离了，后续的元素的位置不受此元素的影响。</p><p>其定位使相对于最近的父级absolute或relative布局的元素位置。</p><h3 id="fixed"><a href="#fixed" class="headerlink" title="fixed"></a>fixed</h3><p>demo：</p><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.demo</span>&#123;</span><br><span class="line">    <span class="attribute">position</span>:fixed;</span><br><span class="line">    <span class="attribute">left</span>:<span class="number">10px</span>;</span><br><span class="line">    <span class="attribute">bottom</span>:<span class="number">10px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>fixed也是脱离文档流的，但其位置使相对于浏览器可视界面的。</p><p>注：定位为<strong>relative、absolute、fixed</strong>布局的元素可以设置z-index属性。z-index属性使元素在<em> &nbsp;z轴 </em>的位置。使用方法为：z-index：2；数值越大位置越靠“上”</p><h1 id="flexbox布局"><a href="#flexbox布局" class="headerlink" title="flexbox布局"></a>flexbox布局</h1><p> 先简单介绍一下用法：父级元素：diaplay：flex；子元素：flex：1 ，2，3，····;flex的数值表示该元素占据的大小。如果子元素要设置为固定宽度：width:80px; flex:none;</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;css布局基础知识&quot;&gt;&lt;a href=&quot;#css布局基础知识&quot; class=&quot;headerlink&quot; title=&quot;css布局基础知识&quot;&gt;&lt;/a&gt;&lt;center&gt;css布局基础知识&lt;/center&gt;&lt;/h1&gt;&lt;h2 id=&quot;常用的布局方法&quot;&gt;&lt;a href=&quot;#常
+      
+    
+    </summary>
+    
+    
+      <category term="-css" scheme="https://woshilishang123.github.io/tags/css/"/>
+    
+  </entry>
   
   <entry>
     <title>jquery学习笔记</title>
