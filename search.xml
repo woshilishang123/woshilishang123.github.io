@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[css布局——float、inline-block、响应式布局]]></title>
+    <url>%2F2019%2F02%2F17%2Fcss%E5%B8%83%E5%B1%80%E2%80%94%E2%80%94float%E5%B8%83%E5%B1%80%2F</url>
+    <content type="text"><![CDATA[简介本篇博客主要介绍float布局、inline-block布局和响应式布局。 float布局特点：元素浮动 脱离文档流 但不脱离文本流 对自身的影响：1、形成“块”(BFC) 这个“块”负责自己的布局，比如可以设置自己的宽高。2、位置尽量靠上。 3、位置尽量靠左（右）。 对兄弟的影响：1、上面贴非float元素。 2、旁边贴float元素。3、不影响其他块级元素位置（即脱离文档流）。4、影响其他块级元素内部文本（即不脱离文本流）。 对父级元素的影响：1、从布局上”消失“ ，可能造成高度塌陷。 避免高度塌陷：1、让父元素也变成“块” 123.father&#123; overflow:auto;/*or hidden*/&#125; 2、设置一个元素超出浮动部分，撑起布局。常用清除浮动方式。 1234567.clearfix::after&#123; content: ''; clear: both; display: block; visibility: hidden; height: 0;&#125; float布局案例实现两栏三栏布局]]></content>
+      <tags>
+        <tag>css</tag>
+        <tag>float</tag>
+        <tag>inline-block</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[css布局知识点详解]]></title>
     <url>%2F2019%2F02%2F16%2Fcss%E5%B8%83%E5%B1%80%2F</url>
     <content type="text"><![CDATA[css布局基础知识常用的布局方法 table表格布局 float浮动＋margin inline-block布局 flexbox布局 盒模型 盒模型从内到外依次是margin（外边距）、border（边框）、padding（内边距）、content（内容）。一般说的width和height是指content（内容）的宽度和高度。 display/position属性作用： &nbsp;&nbsp;· display确定元素的显示类型 ​ &nbsp;&nbsp;&nbsp;· block/inline/inline-block &nbsp;&nbsp;·position确定元素的位置 ​ · static（静态、默认）/relative（相对）/absolute（绝对）/fixed（固定） block 有独立宽高，默认占据一行 inline 和文本一样，默认不会占据一行 inline-block 对外表现像一个inline，对内/内部表现为block。可以有宽高. static静态/默认布局，出现在应该出现的位置。 relativedemo: 12345.demo&#123; position:relative; left:10px; top:10px;&#125; 上述代码块的作用的使class=demo的元素位置相对于其static的位置：离左边10px，里上边10px（向右向下移动10px）。 absolutedemo: 12345.demo&#123; position:absolute; left:80px; top:30px;&#125; 元素一旦设置为absolute布局就从文档流中脱离了，后续的元素的位置不受此元素的影响。 其定位使相对于最近的父级absolute或relative布局的元素位置。 fixeddemo： 12345.demo&#123; position:fixed; left:10px; bottom:10px;&#125; fixed也是脱离文档流的，但其位置使相对于浏览器可视界面的。 注：定位为relative、absolute、fixed布局的元素可以设置z-index属性。z-index属性使元素在 &nbsp;z轴 的位置。使用方法为：z-index：2；数值越大位置越靠“上” flexbox布局 先简单介绍一下用法：父级元素：diaplay：flex；子元素：flex：1 ，2，3，····;flex的数值表示该元素占据的大小。如果子元素要设置为固定宽度：width:80px; flex:none;]]></content>
