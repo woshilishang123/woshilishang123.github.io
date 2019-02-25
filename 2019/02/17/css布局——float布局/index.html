@@ -112,18 +112,20 @@
   daovoice('update');
   </script>
 
-  <meta name="description" content="简介本篇博客主要介绍float布局、inline-block布局和响应式布局。 float布局特点：元素浮动  脱离文档流  但不脱离文本流 对自身的影响：1、形成“块”(BFC) 这个“块”负责自己的布局，比如可以设置自己的宽高。2、位置尽量靠上。 3、位置尽量靠左（右）。   对兄弟的影响：1、上面贴非float元素。 2、旁边贴float元素。3、不影响其他块级元素位置（即脱离文档流）。4、">
+  <meta name="description" content="简介本篇博客主要介绍float布局、inline-block布局和响应式布局。">
 <meta name="keywords" content="css,float,inline-block">
 <meta property="og:type" content="article">
 <meta property="og:title" content="css布局——float、inline-block、响应式布局">
 <meta property="og:url" content="https://woshilishang123.github.io/2019/02/17/css布局——float布局/index.html">
 <meta property="og:site_name" content="tuzi">
-<meta property="og:description" content="简介本篇博客主要介绍float布局、inline-block布局和响应式布局。 float布局特点：元素浮动  脱离文档流  但不脱离文本流 对自身的影响：1、形成“块”(BFC) 这个“块”负责自己的布局，比如可以设置自己的宽高。2、位置尽量靠上。 3、位置尽量靠左（右）。   对兄弟的影响：1、上面贴非float元素。 2、旁边贴float元素。3、不影响其他块级元素位置（即脱离文档流）。4、">
+<meta property="og:description" content="简介本篇博客主要介绍float布局、inline-block布局和响应式布局。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-02-25T09:01:01.986Z">
+<meta property="og:image" content="https://woshilishang123.github.io/2019/02/17/css布局——float布局/liuyifei.jpg">
+<meta property="og:updated_time" content="2019-02-25T12:32:46.482Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="css布局——float、inline-block、响应式布局">
-<meta name="twitter:description" content="简介本篇博客主要介绍float布局、inline-block布局和响应式布局。 float布局特点：元素浮动  脱离文档流  但不脱离文本流 对自身的影响：1、形成“块”(BFC) 这个“块”负责自己的布局，比如可以设置自己的宽高。2、位置尽量靠上。 3、位置尽量靠左（右）。   对兄弟的影响：1、上面贴非float元素。 2、旁边贴float元素。3、不影响其他块级元素位置（即脱离文档流）。4、">
+<meta name="twitter:description" content="简介本篇博客主要介绍float布局、inline-block布局和响应式布局。">
+<meta name="twitter:image" content="https://woshilishang123.github.io/2019/02/17/css布局——float布局/liuyifei.jpg">
 
 
 
@@ -426,7 +428,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-02-25 17:01:01" itemprop="dateModified" datetime="2019-02-25T17:01:01+08:00">2019-02-25</time>
+                <time title="修改时间：2019-02-25 20:32:46" itemprop="dateModified" datetime="2019-02-25T20:32:46+08:00">2019-02-25</time>
               
             
           </span>
@@ -454,7 +456,7 @@
                 
                   <span class="post-meta-item-text">本文字数：</span>
                 
-                <span title="本文字数">502</span>
+                <span title="本文字数">956</span>
               
 
               
@@ -488,7 +490,8 @@
       
 
       
-        <h1 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h1><p>本篇博客主要介绍float布局、inline-block布局和响应式布局。</p>
+        <h1 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h1><p>本篇博客主要介绍float布局、inline-block布局和响应式布局。<br><img src="/2019/02/17/css布局——float布局/liuyifei.jpg" alt="刘亦菲" title="刘亦菲"></p>
+<p><strong><a id="more"></a></strong></p>
 <h1 id="float布局"><a href="#float布局" class="headerlink" title="float布局"></a>float布局</h1><p>特点：元素浮动  脱离文档流  但不脱离文本流</p>
 <p>对自身的影响：1、形成“块”(BFC) 这个“块”负责自己的布局，比如可以设置自己的宽高。2、位置尽量靠上。 3、位置尽量靠左（右）。</p>
 <p><iframe src="//player.bilibili.com/player.html?aid=28282286&cid=48899295&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" width="480" height="360"> </iframe><br> 对兄弟的影响：1、上面贴非float元素。 2、旁边贴float元素。3、不影响其他块级元素位置（即脱离文档流）。4、影响其他块级元素内部文本（即不脱离文本流）。</p>
@@ -498,6 +501,23 @@
 <p>2、设置一个元素超出浮动部分，撑起布局。常用清除浮动方式。</p>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.clearfix</span><span class="selector-pseudo">::after</span>&#123;</span><br><span class="line">    <span class="attribute">content</span>: <span class="string">''</span>;</span><br><span class="line">    <span class="attribute">clear</span>: both;</span><br><span class="line">    <span class="attribute">display</span>: block;</span><br><span class="line">    <span class="attribute">visibility</span>: hidden;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h3 id="float布局案例"><a href="#float布局案例" class="headerlink" title="float布局案例"></a>float布局案例</h3><p>实现两栏三栏布局</p>
+<h1 id="inline-block布局"><a href="#inline-block布局" class="headerlink" title="inline-block布局"></a>inline-block布局</h1><h3 id="特点"><a href="#特点" class="headerlink" title="特点"></a>特点</h3><p>1、像文本一样并列排起来。</p>
+<p>2、没有清楚浮动等问题</p>
+<p>3、需要处理间隙</p>
+<h3 id="如何处理间隙"><a href="#如何处理间隙" class="headerlink" title="如何处理间隙"></a>如何处理间隙</h3><p>1、父元素：font-size=0；子元素（display=inline-block）：font-size=14px（此处字体大小根据实际情况自定义）；</p>
+<p>2、采用注释的方式，一般不采用。</p>
+<h3 id="缺点"><a href="#缺点" class="headerlink" title="缺点"></a>缺点</h3><p>对自适应大小的元素不友好，一般用来给顶宽的元素进行布局。</p>
+<h1 id="响应式设计和布局"><a href="#响应式设计和布局" class="headerlink" title="响应式设计和布局"></a>响应式设计和布局</h1><h3 id="什么是响应式布局"><a href="#什么是响应式布局" class="headerlink" title="什么是响应式布局"></a>什么是响应式布局</h3><p>1、使页面在不同设备上正常使用</p>
+<p>2、一般主要处理屏幕大小的问题</p>
+<p>3、是否有鼠标、是否是读屏、是否支持一些样式</p>
+<h3 id="响应式主要方法："><a href="#响应式主要方法：" class="headerlink" title="响应式主要方法："></a>响应式主要方法：</h3><p>隐藏+折行+自适应空间</p>
+<p>布局结构必须在开始写代码之前就确定好。</p>
+<p>隐藏：确定那一部分在移动端是可以隐藏的</p>
+<p>折行：类似特性列表，从横排变成一行显示一个或两个</p>
+<p>具体方法：</p>
+<p>rem：通过html的字体大小来确定元素字体大小的方法。通过给不同大小的屏幕不同的字号来进行布局。</p>
+<p>viewport：媒体查询，用js或手工确定屏幕多大。</p>
+<p>media query：根据不同设备的特性来匹配不同的样式。</p>
 
       
     </div>
@@ -772,7 +792,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#简介"><span class="nav-number">1.</span> <span class="nav-text">简介</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#float布局"><span class="nav-number">2.</span> <span class="nav-text">float布局</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#float布局案例"><span class="nav-number">2.0.1.</span> <span class="nav-text">float布局案例</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#简介"><span class="nav-number">1.</span> <span class="nav-text">简介</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#float布局"><span class="nav-number">2.</span> <span class="nav-text">float布局</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#float布局案例"><span class="nav-number">2.0.1.</span> <span class="nav-text">float布局案例</span></a></li></ol></li></ol><li class="nav-item nav-level-1"><a class="nav-link" href="#inline-block布局"><span class="nav-number">3.</span> <span class="nav-text">inline-block布局</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#特点"><span class="nav-number">3.0.1.</span> <span class="nav-text">特点</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#如何处理间隙"><span class="nav-number">3.0.2.</span> <span class="nav-text">如何处理间隙</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#缺点"><span class="nav-number">3.0.3.</span> <span class="nav-text">缺点</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#响应式设计和布局"><span class="nav-number">4.</span> <span class="nav-text">响应式设计和布局</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#什么是响应式布局"><span class="nav-number">4.0.1.</span> <span class="nav-text">什么是响应式布局</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#响应式主要方法："><span class="nav-number">4.0.2.</span> <span class="nav-text">响应式主要方法：</span></a></li></ol></li></div>
             
 
           </div>
