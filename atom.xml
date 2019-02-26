@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://woshilishang123.github.io/"/>
-  <updated>2019-02-25T12:40:33.009Z</updated>
+  <updated>2019-02-26T09:28:54.622Z</updated>
   <id>https://woshilishang123.github.io/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>css效果</title>
+    <link href="https://woshilishang123.github.io/2019/02/26/css%E6%95%88%E6%9E%9C/"/>
+    <id>https://woshilishang123.github.io/2019/02/26/css效果/</id>
+    <published>2019-02-26T06:28:47.000Z</published>
+    <updated>2019-02-26T09:28:54.622Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="CSS效果"><a href="#CSS效果" class="headerlink" title="CSS效果"></a><center>CSS效果</center></h1><h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h3><p>本篇博客介绍css中的一些效果，比如：box-shadow、text-shadow、border-radius、background、clip-path、3D-tranform等。</p><p>通过本博客的学习，你可是通过CSS实现一些特殊的效果，阴影，动画等。css的效果也被称为css最出彩的一部分。</p><p><img src="/2019/02/26/css效果/liuyifei.jpg" alt="刘亦菲" title="刘亦菲"></p><a id="more"></a><h3 id="box-shadow（投影）、clip-path（使用较少，但神奇）、3D-tranform"><a href="#box-shadow（投影）、clip-path（使用较少，但神奇）、3D-tranform" class="headerlink" title="box-shadow（投影）、clip-path（使用较少，但神奇）、3D-tranform"></a>box-shadow（投影）、clip-path（使用较少，但神奇）、3D-tranform</h3><h4 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h4><p><img src="/2019/02/26/css效果/shadow.jpg" alt="box-shadow" title="box-shadow"></p><p>外阴影：</p><p>24px：投影的模糊区域大小（模糊区域）</p><p>40px：投影在border box shape的基础上要扩展多少.为负值的时候投影缩小（拓展区域）</p><p>64px 64px：投影相对于原元素的偏移（偏移位置）</p><p>rgba：投影颜色和透明度</p><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">box-shadow</span>：0 0 0 15<span class="selector-tag">px</span> <span class="selector-tag">red</span></span><br></pre></td></tr></table></figure><p>上述代码相当也给元素加了一个15px宽的外边框。此外边框和border不同的是不占据空间。元素的宽高保持不变。</p><div><br>    <p style="width: 150px; height: 100px; box-shadow: 0px 0px 0px 85px green; background: red; margin:0 auto; text-align: center"><br>        外阴影<br>    </p><br>    <p style="text-align: center; line-height:24px"><br>        此文字可以显示在上一段的“外边框”部分<br>    </p><br></div><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">box-shadow</span>：0 0 0 15<span class="selector-tag">px</span> <span class="selector-tag">red</span>，</span><br><span class="line">12<span class="selector-tag">px</span> 12<span class="selector-tag">px</span> 5<span class="selector-tag">px</span> 8<span class="selector-tag">px</span> <span class="selector-tag">green</span>;</span><br></pre></td></tr></table></figure><p>上述代码会形成两个投影，而不是替代第一个投影。</p><p>利用此特性可以使用一个div完成一个复杂的图形。</p><p>内阴影：比外阴影多一个inset属性 。inset可以写在最前或最后。</p><h4 id="优点"><a href="#优点" class="headerlink" title="优点"></a>优点</h4><p>营造层次感（立体感）</p><p> 充当没有宽度的边框（不会占据空间，不影响排版）</p><p>特殊效果：无线投影</p><h3 id="text-shadow（文本投影）"><a href="#text-shadow（文本投影）" class="headerlink" title="text-shadow（文本投影）"></a>text-shadow（文本投影）</h3><h4 id="特性"><a href="#特性" class="headerlink" title="特性"></a>特性</h4><p>立体感</p><p>印刷品质感（字体边缘有模糊，类似图书）</p><div><br>    <center>《背影》</center><br>    <p style="line-height:2em; text-shadow: 1px 1px 0 #aaaaaa"><br>        我与父亲不相见已二年余了，我最不能忘记的是他的背影。那年冬天，祖母死了，父亲的差使也交卸了，正是祸不单行的日子，我从北京到徐州，打算跟着父亲奔丧回家。到徐州见着父亲，看见满院狼藉的东西，又想起祖母，不禁簌簌地流下眼泪。父亲说，“事已如此，不必难过，好在天无绝人之路！”<br>    </p><br>    <p style="line-height:2em; text-shadow: 0 0 1px rgba(128,128,128,.4)"><br>       回家变卖典质，父亲还了亏空；又借钱办了丧事。这些日子，家中光景很是惨淡，一半为了丧事，一半为了父亲赋闲。丧事完毕，父亲要到南京谋事，我也要回北京念书，我们便同行。<br>    </p><br>　　<p style="line-height:2em; text-shadow: -1px -1px 0 #ffffff; background: #000000"><br>　　到南京时，有朋友约去游逛，勾留了一日；第二日上午便须渡江到浦口，下午上车北去。父亲因为事忙，本已说定不送我，叫旅馆里一个熟识的茶房陪我同去。他再三嘱咐茶房，甚是仔细。但他终于不放心，怕茶房不妥帖；颇踌躇了一会。其实我那年已二十岁，北京已来往过两三次，是没有甚么要紧的了。他踌躇了一会，终于决定还是自己送我去。我两三回劝他不必去；他只说，“不要紧，他们去不好！”<br>    </p><br></div><h3 id="border-radius（圆角）"><a href="#border-radius（圆角）" class="headerlink" title="border-radius（圆角）"></a>border-radius（圆角）</h3><h4 id="效果"><a href="#效果" class="headerlink" title="效果"></a>效果</h4><p>圆角矩形</p><p>圆形</p><p>半圆/扇形</p><p>一些奇奇怪怪的角</p><p>demo:</p><div><br>    <p style="width:100px; height:100px; background:red; border-radius:50px"><br><br>    </p><br>    <p style="width:100px; height:100px; background:red; border-radius:50%"><br><br>    </p><br>    <p style="width:100px; height:100px; background:red; border-radius:50px; border:15px solid green"><br><br>    </p><br>    <p style="width:100px; height:100px; background:red; border-top-left-radius:50px; border:15px solid green"><br><br>    </p><br>    <p style="width:100px; height:100px; background:red; border-top-left-radius:50px 100px; border:15px solid green"><br><br>    </p><br></div><p>倒数第二个还可以设置：border-top-left-radius、border-top-right-radius、border-bottom-left-radius、border-bottom-right-radius最后一个设置的垂直和水平方向不同的半径。</p><h3 id="background（背景）"><a href="#background（背景）" class="headerlink" title="background（背景）"></a>background（背景）</h3>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;CSS效果&quot;&gt;&lt;a href=&quot;#CSS效果&quot; class=&quot;headerlink&quot; title=&quot;CSS效果&quot;&gt;&lt;/a&gt;&lt;center&gt;CSS效果&lt;/center&gt;&lt;/h1&gt;&lt;h3 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h3&gt;&lt;p&gt;本篇博客介绍css中的一些效果，比如：box-shadow、text-shadow、border-radius、background、clip-path、3D-tranform等。&lt;/p&gt;
+&lt;p&gt;通过本博客的学习，你可是通过CSS实现一些特殊的效果，阴影，动画等。css的效果也被称为css最出彩的一部分。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/2019/02/26/css效果/liuyifei.jpg&quot; alt=&quot;刘亦菲&quot; title=&quot;刘亦菲&quot;&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="css" scheme="https://woshilishang123.github.io/tags/css/"/>
+    
+  </entry>
   
   <entry>
     <title>css布局——float、inline-block、响应式布局</title>
