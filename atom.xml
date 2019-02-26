@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://woshilishang123.github.io/"/>
-  <updated>2019-02-26T12:20:16.788Z</updated>
+  <updated>2019-02-26T14:23:09.587Z</updated>
   <id>https://woshilishang123.github.io/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>css的一些记不住属性集合</title>
+    <link href="https://woshilishang123.github.io/2019/02/26/css%E7%9A%84%E4%B8%80%E4%BA%9B%E8%AE%B0%E4%B8%8D%E4%BD%8F%E5%B1%9E%E6%80%A7%E9%9B%86%E5%90%88/"/>
+    <id>https://woshilishang123.github.io/2019/02/26/css的一些记不住属性集合/</id>
+    <published>2019-02-26T12:36:51.000Z</published>
+    <updated>2019-02-26T14:23:09.587Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="css属性"><a href="#css属性" class="headerlink" title="css属性"></a>css属性</h1><p><img src="/2019/02/26/css的一些记不住属性集合/liuyifei.jpg" alt="liu"></p><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">text-decoration</span>: <span class="selector-tag">none</span>;<span class="comment">/*链接下划线去除*/</span></span><br><span class="line"><span class="selector-tag">box-sizing</span>: <span class="selector-tag">border-box</span>;<span class="comment">/*盒子宽度从内容content变成border+padding+content*/</span></span><br><span class="line">    <span class="selector-tag">text-align</span>: <span class="selector-tag">center</span>;</span><br><span class="line">    <span class="selector-tag">border-color</span>: <span class="selector-tag">red</span>;</span><br><span class="line">    <span class="selector-tag">text-indent</span>: 20<span class="selector-tag">px</span>;<span class="comment">/*首行缩进*/</span></span><br><span class="line">    background: url("../img/list-yellow.jpg") 17px 20px no-repeat;</span><br><span class="line">    <span class="selector-tag">background-position-y</span>: <span class="selector-tag">-22px</span>;</span><br></pre></td></tr></table></figure><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.clearfix</span><span class="selector-pseudo">:after</span>&#123;</span><br><span class="line">    <span class="comment">/*清楚浮动*/</span></span><br><span class="line">    <span class="attribute">content</span>: <span class="string">' '</span>;</span><br><span class="line">    <span class="attribute">display</span>: block;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">0px</span>;</span><br><span class="line">    <span class="attribute">line-height</span>: <span class="number">0px</span>;</span><br><span class="line">    <span class="attribute">clear</span>: both;</span><br><span class="line">    <span class="attribute">zoom</span>: <span class="number">1</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>height=line-height可以让文字自动垂直居中</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;css属性&quot;&gt;&lt;a href=&quot;#css属性&quot; class=&quot;headerlink&quot; title=&quot;css属性&quot;&gt;&lt;/a&gt;css属性&lt;/h1&gt;&lt;p&gt;&lt;img src=&quot;/2019/02/26/css的一些记不住属性集合/liuyifei.jpg&quot; alt=&quot;liu
+      
+    
+    </summary>
+    
+    
+      <category term="css" scheme="https://woshilishang123.github.io/tags/css/"/>
+    
+  </entry>
   
   <entry>
     <title>css效果</title>
