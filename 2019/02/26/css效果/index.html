@@ -122,12 +122,14 @@
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://woshilishang123.github.io/2019/02/26/css效果/liuyifei.jpg">
 <meta property="og:image" content="https://woshilishang123.github.io/2019/02/26/css效果/shadow.jpg">
-<meta property="og:updated_time" content="2019-02-26T09:28:54.622Z">
+<meta property="og:updated_time" content="2019-02-26T12:20:16.788Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="css效果">
 <meta name="twitter:description" content="CSS效果简介本篇博客介绍css中的一些效果，比如：box-shadow、text-shadow、border-radius、background、clip-path、3D-tranform等。 通过本博客的学习，你可是通过CSS实现一些特殊的效果，阴影，动画等。css的效果也被称为css最出彩的一部分。">
 <meta name="twitter:image" content="https://woshilishang123.github.io/2019/02/26/css效果/liuyifei.jpg">
 
+
+  
 
 
   <link rel="alternate" href="/atom.xml" title="tuzi" type="application/atom+xml">
@@ -412,7 +414,7 @@
                 
               
 
-              <time title="创建时间：2019-02-26 14:28:47 / 修改时间：17:28:54" itemprop="dateCreated datePublished" datetime="2019-02-26T14:28:47+08:00">2019-02-26</time>
+              <time title="创建时间：2019-02-26 14:28:47 / 修改时间：20:20:16" itemprop="dateCreated datePublished" datetime="2019-02-26T14:28:47+08:00">2019-02-26</time>
             
 
             
@@ -445,7 +447,7 @@
                 
                   <span class="post-meta-item-text">本文字数：</span>
                 
-                <span title="本文字数">1.4k</span>
+                <span title="本文字数">2.6k</span>
               
 
               
@@ -459,7 +461,7 @@
                 
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
-                <span title="阅读时长">1 分钟</span>
+                <span title="阅读时长">2 分钟</span>
               
             </div>
           
@@ -483,7 +485,7 @@
 <p>通过本博客的学习，你可是通过CSS实现一些特殊的效果，阴影，动画等。css的效果也被称为css最出彩的一部分。</p>
 <p><img src="/2019/02/26/css效果/liuyifei.jpg" alt="刘亦菲" title="刘亦菲"></p>
 <a id="more"></a>
-<h3 id="box-shadow（投影）、clip-path（使用较少，但神奇）、3D-tranform"><a href="#box-shadow（投影）、clip-path（使用较少，但神奇）、3D-tranform" class="headerlink" title="box-shadow（投影）、clip-path（使用较少，但神奇）、3D-tranform"></a>box-shadow（投影）、clip-path（使用较少，但神奇）、3D-tranform</h3><h4 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h4><p><img src="/2019/02/26/css效果/shadow.jpg" alt="box-shadow" title="box-shadow"></p>
+<h3 id="box-shadow（投影）"><a href="#box-shadow（投影）" class="headerlink" title="box-shadow（投影）"></a>box-shadow（投影）</h3><h4 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h4><p><img src="/2019/02/26/css效果/shadow.jpg" alt="box-shadow" title="box-shadow"></p>
 <p>外阴影：</p>
 <p>24px：投影的模糊区域大小（模糊区域）</p>
 <p>40px：投影在border box shape的基础上要扩展多少.为负值的时候投影缩小（拓展区域）</p>
@@ -509,10 +511,21 @@
 <p>半圆/扇形</p>
 <p>一些奇奇怪怪的角</p>
 <p>demo:</p>
-<div><br>    <p style="width:100px; height:100px; background:red; border-radius:50px"><br><br>    </p><br>    <p style="width:100px; height:100px; background:red; border-radius:50%"><br><br>    </p><br>    <p style="width:100px; height:100px; background:red; border-radius:50px; border:15px solid green"><br><br>    </p><br>    <p style="width:100px; height:100px; background:red; border-top-left-radius:50px; border:15px solid green"><br><br>    </p><br>    <p style="width:100px; height:100px; background:red; border-top-left-radius:50px 100px; border:15px solid green"><br><br>    </p><br></div>
+<div><br>    <p style="width:100px; height:100px; background:red; border-radius:50px"></p><br>    <p style="width:100px; height:100px; background:red; border-radius:50%"></p><br>    <p style="width:100px; height:100px; background:red; border-radius:50px; border:15px solid green"></p><br>    <p style="width:100px; height:100px; background:red; border-top-left-radius:50px; border:15px solid green"></p><br>    <p style="width:100px; height:100px; background:red; border-top-left-radius:50px 100px; border:15px solid green"></p><br></div>
 
 <p>倒数第二个还可以设置：border-top-left-radius、border-top-right-radius、border-bottom-left-radius、border-bottom-right-radius最后一个设置的垂直和水平方向不同的半径。</p>
-<h3 id="background（背景）"><a href="#background（背景）" class="headerlink" title="background（背景）"></a>background（背景）</h3>
+<h3 id="background（背景）"><a href="#background（背景）" class="headerlink" title="background（背景）"></a>background（背景）</h3><h4 id="效果-1"><a href="#效果-1" class="headerlink" title="效果"></a>效果</h4><p>纹理，图片，渐变</p>
+<p>雪碧图动画</p>
+<p>背景图尺寸自适应</p>
+<h4 id="背景图自适应"><a href="#背景图自适应" class="headerlink" title="背景图自适应"></a>背景图自适应</h4><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.background</span>&#123;</span><br><span class="line">    <span class="attribute">width</span>:<span class="number">400px</span>;</span><br><span class="line">    <span class="attribute">height</span>:<span class="number">300px</span>;</span><br><span class="line">    <span class="attribute">border</span>:<span class="number">1px</span> solid red;</span><br><span class="line">    <span class="attribute">background</span>:<span class="built_in">url</span>(../demo.png);</span><br><span class="line">    <span class="attribute">background-position</span>:center center;<span class="comment">/*居中 center top水平居中垂直靠顶*/</span></span><br><span class="line">    <span class="attribute">background-repeat</span>: no-repeat;<span class="comment">/*repeat-x repeat-y 横向/纵向 重复*/</span></span><br><span class="line">    <span class="attribute">background-size</span>: <span class="number">200px</span> <span class="number">100px</span>;<span class="comment">/*也可以使用百分比*/</span></span><br><span class="line">    <span class="attribute">background-size</span>:cover;<span class="comment">/*图片覆盖整个容器同时长宽比不变，多余的隐藏*/</span></span><br><span class="line">     <span class="attribute">background-size</span>:container;<span class="comment">/*图片覆盖整个容器同时长宽比不变，图片完整显示，无法显示的部分为空白*/</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="clip-path（使用较少，但神奇）"><a href="#clip-path（使用较少，但神奇）" class="headerlink" title="clip-path（使用较少，但神奇）"></a>clip-path（使用较少，但神奇）</h3><h4 id="功能"><a href="#功能" class="headerlink" title="功能"></a>功能</h4><p>对容器进行裁剪</p>
+<p>常见几何图形</p>
+<p>自定义路径裁剪</p>
+<h4 id="Demo"><a href="#Demo" class="headerlink" title="Demo"></a>Demo</h4><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.background</span>&#123;</span><br><span class="line">    <span class="attribute">width</span>:<span class="number">400px</span>;</span><br><span class="line">    <span class="attribute">height</span>:<span class="number">300px</span>;</span><br><span class="line">    <span class="attribute">border</span>:<span class="number">1px</span> solid red;</span><br><span class="line">    <span class="attribute">background</span>:<span class="built_in">url</span>(../demo.png);</span><br><span class="line">    <span class="attribute">background-position</span>:center center;</span><br><span class="line">    <span class="attribute">background-repeat</span>: no-repeat;</span><br><span class="line">    <span class="attribute">background-size</span>:cover;</span><br><span class="line">    <span class="attribute">clip-path</span>: <span class="built_in">inset</span>(100px 50px);<span class="comment">/*显示矩形 宽100px*/</span></span><br><span class="line">    <span class="attribute">clip-path</span>: <span class="built_in">circle</span>(50px at 100px 100px);<span class="comment">/*在相对左上（100px，100px）位置显示一个半径50px的圆 在加上一个鼠标事件可以做一个很棒的动画*/</span></span><br><span class="line">    <span class="attribute">clip-path</span>: <span class="built_in">polygon</span>(50% 0%, 100% 50%, 50% 100%, 0 50%);<span class="comment">/*多边形 指定了几个关键的点（x=50%*width,y=0%*height).可以定义无限多个点，画出各种形状*/</span></span><br><span class="line">    <span class="comment">/*clip-path: url(#clipPath);html里面有一个class="clipPath"的元素*/</span></span><br><span class="line">    </span><br><span class="line">    <span class="comment">/*与下面hover相衬*/</span></span><br><span class="line">    <span class="attribute">transition</span>: clip-path .<span class="number">4s</span>;<span class="comment">/*动画*/</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.background</span><span class="selector-pseudo">:hover</span>&#123;</span><br><span class="line">    <span class="attribute">clip-path</span>: <span class="built_in">circle</span>(80px at 100px 100px);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>svg+clip-path部分略。</p>
+<p>clip-path功能强大，但有一些浏览器兼容性不好，甚至会报错。</p>
+<h3 id="3D-tranform（3d变换）"><a href="#3D-tranform（3d变换）" class="headerlink" title="3D-tranform（3d变换）"></a>3D-tranform（3d变换）</h3><p>略</p>
+
       
     </div>
 
@@ -780,7 +793,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#CSS效果"><span class="nav-number">1.</span> <span class="nav-text">CSS效果</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#简介"><span class="nav-number">1.0.1.</span> <span class="nav-text">简介</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#box-shadow（投影）、clip-path（使用较少，但神奇）、3D-tranform"><span class="nav-number">1.0.2.</span> <span class="nav-text">box-shadow（投影）、clip-path（使用较少，但神奇）、3D-tranform</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#介绍"><span class="nav-number">1.0.2.1.</span> <span class="nav-text">介绍</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#优点"><span class="nav-number">1.0.2.2.</span> <span class="nav-text">优点</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#text-shadow（文本投影）"><span class="nav-number">1.0.3.</span> <span class="nav-text">text-shadow（文本投影）</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#特性"><span class="nav-number">1.0.3.1.</span> <span class="nav-text">特性</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#border-radius（圆角）"><span class="nav-number">1.0.4.</span> <span class="nav-text">border-radius（圆角）</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#效果"><span class="nav-number">1.0.4.1.</span> <span class="nav-text">效果</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#background（背景）"><span class="nav-number">1.0.5.</span> <span class="nav-text">background（背景）</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#CSS效果"><span class="nav-number">1.</span> <span class="nav-text">CSS效果</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#简介"><span class="nav-number">1.0.1.</span> <span class="nav-text">简介</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#box-shadow（投影）"><span class="nav-number">1.0.2.</span> <span class="nav-text">box-shadow（投影）</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#介绍"><span class="nav-number">1.0.2.1.</span> <span class="nav-text">介绍</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#优点"><span class="nav-number">1.0.2.2.</span> <span class="nav-text">优点</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#text-shadow（文本投影）"><span class="nav-number">1.0.3.</span> <span class="nav-text">text-shadow（文本投影）</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#特性"><span class="nav-number">1.0.3.1.</span> <span class="nav-text">特性</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#border-radius（圆角）"><span class="nav-number">1.0.4.</span> <span class="nav-text">border-radius（圆角）</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#效果"><span class="nav-number">1.0.4.1.</span> <span class="nav-text">效果</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#background（背景）"><span class="nav-number">1.0.5.</span> <span class="nav-text">background（背景）</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#效果-1"><span class="nav-number">1.0.5.1.</span> <span class="nav-text">效果</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#背景图自适应"><span class="nav-number">1.0.5.2.</span> <span class="nav-text">背景图自适应</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#clip-path（使用较少，但神奇）"><span class="nav-number">1.0.6.</span> <span class="nav-text">clip-path（使用较少，但神奇）</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#功能"><span class="nav-number">1.0.6.1.</span> <span class="nav-text">功能</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Demo"><span class="nav-number">1.0.6.2.</span> <span class="nav-text">Demo</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3D-tranform（3d变换）"><span class="nav-number">1.0.7.</span> <span class="nav-text">3D-tranform（3d变换）</span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -821,7 +834,7 @@
     
       <span class="post-meta-item-text">站点总字数：</span>
     
-    <span title="站点总字数">4k</span>
+    <span title="站点总字数">5k</span>
   
 
   
@@ -832,7 +845,7 @@
     
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
     
-    <span title="站点阅读时长">3 分钟</span>
+    <span title="站点阅读时长">5 分钟</span>
   
 </div>
 
