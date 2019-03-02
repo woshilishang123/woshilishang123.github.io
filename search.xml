@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[HTML5之网页布局]]></title>
+    <url>%2F2019%2F03%2F02%2Fhtml5%E7%BD%91%E9%A1%B5%E5%B8%83%E5%B1%80%2F</url>
+    <content type="text"><![CDATA[本博客主要介绍HTML5中新增的header等元素对网页整体框架布局的影响。 传统布局 HTML5布局 优点HTML5布局结构更加直白明了。 1、语义化 ：HTML5可以让很多更语义化的结构代码标签代替大量无意义的div标签。这种语义化的特性提升了网页的质量和语义。减少了以前用于css调用class和id属性。 2、 对搜索引擎的友好。新的结构标签带买的是网页布局的改变及提升对搜索引擎的友好。]]></content>
+      <tags>
+        <tag>HTML5</tag>
+        <tag>网页布局</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[走进HTML5]]></title>
     <url>%2F2019%2F03%2F01%2F%E8%B5%B0%E8%BF%9BHTML5%2F</url>
     <content type="text"><![CDATA[2014年，HTML5发布。 HTML5的变化WebAPP：HTML5新增了离线存储、更丰富的表单、js线程、socket、标准扩展embed、css3…… 可以使用开发网页的方式开发webAPP 新增了流媒体与多媒体引擎 ：Audio、vedio、webgldengdeng 在移动互联网方面的优势： 1、跨平台：HTML5是唯一一个通吃PC、Mac、iPhone、Android等主流平台的跨平台语言。 2、快速迭代 3、减低成本：HTML5开发比原生APP开发成本降低一倍。 4、导流入口多：HTML5应用导流非常容易。 5、分发效率高 &lt;!DCOTYPE&gt;标签定义和用法&lt;!DCOTYPE&gt;声明必须是HTML文档的第一行，位于&lt; html &gt;标签之前。 &lt;!DCOTYPE&gt;不是HTML标签，它用来指示web浏览器关于页面使用哪个HTML版本进行编写的指令。 HTML中新增的标签结构标签结构标签（块状元素）——有意义的div &lt; artical &gt; 标记定义一篇文章。 &lt; header &gt; 标记定义一个页面或一个区域的头部 &lt; nav &gt; 标记定义导航链接 &lt; section&gt; 标记定义一个区域；在网页中用途比较大 &lt; aside &gt; 标记定义页面内容部分的侧边栏 &lt; hgroup&gt; 标记定义文件中一个区块的相关信息 &lt; figure &gt; 标记定义一组媒体内容以及它们的标题 &lt; figcaption&gt; 标记定义fgroup元素的标题 &lt; footer &gt; 标记定义一个页面或一个区域的底部 &lt; dialog &gt; 标记定义一个对话框（会话框）类似微信 补充：1、header/secton/aside/article/footer里面不要嵌套使用 123&lt;header&gt; &lt;header&gt;错案案例&lt;/header&gt;&lt;/header&gt; 2、级别：header/secton/footer &gt; aside/article/figure/hgroup/nav &gt; div/figcaption 3、具体标签使用见《布局部分》 多媒体标签&lt; video &gt;标记定义一个视频 demo: 1&lt;vedio src="../123.mp4" controls="controls"&gt;&lt;/vedio&gt; &lt; audio &gt;标记定义音频内容 demo： 123&lt;audio src="../123.mp3" autoplay="autoplay" loop="-1" controls="controls"&gt; autoplay:播放 loop="-1"：无限循环 controls:出现音频控制器&lt;/audio&gt; &lt; source &gt;标记定义媒体资源 demo1: 123&lt;audio autoplay="autoplay"&gt; &lt;source src="../123.mp3" type="audio/mpeg"&gt;&lt;/audio&gt; demo2: 123&lt;vedio autoplay="autoplay" width="1024" height="768"&gt; &lt;source src="../123.mp4" type="vedio/mp4"&gt;&lt;/vedio&gt; &lt; canvas &gt;标记定义图片 &lt; embed &gt;标记定义外部的可交互的内容或插件，比如flashdemo： 123&lt;embed src="../123.swf" width="1024" height="768"&gt; 插入了一个flash文件&lt;/embed&gt; 意义多媒体标签的出现意味着富媒体的发展以及不适用插件的情况先即可操作媒体文件，极大地提升了用户体验。 Web应用标签状态标签&lt; meter &gt; 状态标签（实时状态显示：气温气压） &lt; progress &gt; 状态标签（任务过程：安装、卸载） 12345&lt;meter value="180" min="20" max="380" low="200" high="240" optimum="220"&gt; demo1:电压 optimum:最佳值&lt;/meter&gt;&lt;meter value="0.75"&gt;75%&lt;/meter&gt; demo1:电压 optimum:最佳值 75% 12&lt;progress value="37" max="100"&gt;&lt;/progress&gt;&lt;progress max="100"&gt;&lt;/progress&gt; 其他标签注释标签&lt; ruby &gt; 标记定义注释或音标 &lt; rt &gt; 标记定义对ruby的注释内容文本 &lt; rp &gt; 告诉那些不支持ruby元素的浏览器如何去显示 注：rp不要放在rt内 demo略 mark标签 标记定义有标记的文本 demo： 123&lt;p&gt; 黑ui锋锐&lt;mark&gt;户人&lt;/mark&gt;俄铝比u你咧我恶女i柔儿v人我哦i热女iv繁华如鳄冰鱼&lt;/p&gt; 黑ui锋锐户人俄铝比u你咧我恶女i柔儿v人我哦i热女iv繁华如鳄冰鱼 output标签标记定义一些输出类型，计算表单结果配合使用]]></content>

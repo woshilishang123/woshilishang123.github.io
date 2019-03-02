@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://woshilishang123.github.io/"/>
-  <updated>2019-03-01T12:32:52.959Z</updated>
+  <updated>2019-03-02T05:31:33.177Z</updated>
   <id>https://woshilishang123.github.io/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>HTML5之网页布局</title>
+    <link href="https://woshilishang123.github.io/2019/03/02/html5%E7%BD%91%E9%A1%B5%E5%B8%83%E5%B1%80/"/>
+    <id>https://woshilishang123.github.io/2019/03/02/html5网页布局/</id>
+    <published>2019-03-02T04:58:37.000Z</published>
+    <updated>2019-03-02T05:31:33.177Z</updated>
+    
+    <content type="html"><![CDATA[<p>本博客主要介绍HTML5中新增的header等元素对网页整体框架布局的影响。</p><p><img src="/2019/03/02/html5网页布局/logo.jpg" alt="logo" title="liuyifei"></p><a id="more"></a><h3 id="传统布局"><a href="#传统布局" class="headerlink" title="传统布局"></a>传统布局</h3><p><img src="/2019/03/02/html5网页布局/传统布局.jpg" alt="传统布局" title="传统布局"></p><h3 id="HTML5布局"><a href="#HTML5布局" class="headerlink" title="HTML5布局"></a>HTML5布局</h3><p><img src="/2019/03/02/html5网页布局/HTML5布局.jpg" alt="HTML5布局"></p><h4 id="优点"><a href="#优点" class="headerlink" title="优点"></a>优点</h4><p>HTML5布局结构更加直白明了。</p><p>1、语义化 ：HTML5可以让很多更语义化的结构代码标签代替大量无意义的div标签。这种语义化的特性提升了网页的质量和语义。减少了以前用于css调用class和id属性。</p><p>2、 对搜索引擎的友好。新的结构标签带买的是网页布局的改变及提升对搜索引擎的友好。</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;本博客主要介绍HTML5中新增的header等元素对网页整体框架布局的影响。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/2019/03/02/html5网页布局/logo.jpg&quot; alt=&quot;logo&quot; title=&quot;liuyifei&quot;&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="HTML5" scheme="https://woshilishang123.github.io/tags/HTML5/"/>
+    
+      <category term="网页布局" scheme="https://woshilishang123.github.io/tags/%E7%BD%91%E9%A1%B5%E5%B8%83%E5%B1%80/"/>
+    
+  </entry>
   
   <entry>
     <title>走进HTML5</title>
