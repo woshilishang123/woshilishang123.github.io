@@ -1,6 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[html5表单和input]]></title>
+    <url>%2F2019%2F03%2F04%2Fhtml5%E8%A1%A8%E5%8D%95%E5%92%8Cinput%2F</url>
+    <content type="text"><![CDATA[本篇博客主要介绍HTML5的属性变化和表单验证。 HTML5属性变化input新增属性电子邮件1&lt;input type="email" name="email"&gt;&lt;/input&gt; URL1&lt;input type=&quot;url&quot; name=&quot;url&quot;&gt;&lt;/input&gt; 电话号码1&lt;input type="tel" name="tel"&gt;&lt;/input&gt; 数字1&lt;input type="number" name="number"&gt;&lt;/input&gt; Date Pickers此input类型包括Date,Month,Week,Time, DateTime(选取时间，日，月，年-使用UTC时间),Date-local(本地时间) 1234&lt;div&gt; Date: &lt;input type="date" name="date"&gt;&lt;/input&gt;&lt;/div&gt; Date: Range Search Color12345&lt;div&gt; &lt;input type="range" name="range" min="1" max="10"&gt;&lt;/input&gt; &lt;input type="search" name="search"&gt;&lt;/input&gt; &lt;input type="color" name="color"&gt;&lt;/input&gt;&lt;/div&gt; 表单属性autocomplete属性自动完成(autocomplete)属性,再次打开网页，网页会记住上次提交的内容。 form或input域应该拥有自动完成功能 &lt; form autocomplete=”on/off”&gt;&lt; /form&gt; PS:autocomplete适用于&lt; form &gt;标签，以及以下类型的&lt; input &gt;标签：text, search, url, telephone, email, password, datepickers, range, color。 12345&lt;form action="https://www.baidu.com" autocomplete="on"&gt; &lt;input type="text" name="text"&gt;&lt;/input&gt; &lt;input type="text" name="text" autocomplete="off"&gt;&lt;/input&gt; &lt;input type="submit"&gt;&lt;/input&gt;&lt;/form&gt; autofocus属性规定在页面加载时，域自动地获得焦点。 autofocus属性使用与所有的&lt; input&gt;标签的类型。 12345&lt;form action="https://www.baidu.com"&gt; &lt;input type="text" name="text"&gt;&lt;/input&gt; &lt;input type="text" name="text" autofocus="autofocus"&gt;&lt;/input&gt;/*用法:autofocus=”autofocus“*/ &lt;input type="submit"&gt;&lt;/input&gt;&lt;/form&gt; multiple(ˈməltəpəl)规定输入域中可选择多个值 PS：multiple属性适用于以下类型的&lt; input&gt;标签：email and file 12345678&lt;form action="https://www.baidu.com"&gt; 请选择文件 &lt;input type="file" name="file"&gt;&lt;/input&gt; &lt;input type="email" name="email" multiple="multiple" value="123@qq.com,234@qq.com"&gt;&lt;/input&gt;/*形成数组发到后台,若无multiple则形成一个字符串发送到后台*/ &lt;input type="file" name="file" multiple="multiple"&gt;&lt;/input&gt;/*用法:multiple="multiple"*/ &lt;input type="submit"&gt;&lt;/input&gt;&lt;/form&gt; 只能选择一个文件 只能选择多个文件 placeholder属性提供一种提示（hint），描述输入域期待的值 适用于&lt; input&gt;标签type属性值为：text, search, telephone, email, password。 12345&lt;form action="https://ww.baidu.com"&gt; &lt;input type="text" name="text"&gt;&lt;/input&gt; &lt;input type="text" name="text" autofocus="autofocus" placeholder="请输入你的银行卡密码"&gt;&lt;/input&gt; &lt;input type="submit"&gt;&lt;/input&gt;&lt;/form&gt; required属性规定必须再提交之前填写输入域（不能为空） 减少前端开发人员写表单验证的压力。 required适用于&lt; form &gt;标签，以及以下类型的&lt; input &gt;标签：text, search, url, telephone, email, password, date pickers, number, checkbox,radio,file。 12345&lt;form action="https://www.baidu.com"&gt; &lt;input type="text" name="text" required="required"&gt;&lt;/input&gt; &lt;input type="email" name="email" required="required"&gt;&lt;/input&gt; &lt;input type="submit"&gt;&lt;/input&gt;&lt;/form&gt; 链接属性sizessizes用在&lt; link&gt;里面 1&lt;link rel="icon" href="icon.gif" type="image/gif" sizes="16X16"&gt; targettarget用在base里面 1&lt;base href="http://localhost/" target="_blank"&gt;/*控制整个网页的超链接&lt; a &gt;*/ 超链接a:media=””(表示对设备进行优化，handheld对“手持”设备进行支持，tv对“电视”设备进行支持)； a:hreflang= “zh-CN”（设置语言） a:rel=“external”（设置超链接的引用，这里超链接为外部链接）。]]></content>
+      <categories>
+        <category>HTML5</category>
+      </categories>
+      <tags>
+        <tag>HTML5</tag>
+        <tag>表单</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[html5表单]]></title>
+    <url>%2F2019%2F03%2F02%2Fhtml5%E8%A1%A8%E5%8D%95%2F</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
     <title><![CDATA[HTML5之网页布局]]></title>
     <url>%2F2019%2F03%2F02%2Fhtml5%E7%BD%91%E9%A1%B5%E5%B8%83%E5%B1%80%2F</url>
     <content type="text"><![CDATA[本博客主要介绍HTML5中新增的header等元素对网页整体框架布局的影响。 传统布局 HTML5布局 优点HTML5布局结构更加直白明了。 1、语义化 ：HTML5可以让很多更语义化的结构代码标签代替大量无意义的div标签。这种语义化的特性提升了网页的质量和语义。减少了以前用于css调用class和id属性。 2、 对搜索引擎的友好。新的结构标签带买的是网页布局的改变及提升对搜索引擎的友好。]]></content>
