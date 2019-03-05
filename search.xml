@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[css背景与渐变]]></title>
+    <url>%2F2019%2F03%2F05%2Fcss%E8%83%8C%E6%99%AF%E4%B8%8E%E6%B8%90%E5%8F%98%2F</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
     <title><![CDATA[CSS3边框与圆角]]></title>
     <url>%2F2019%2F03%2F05%2Fcss%E8%BE%B9%E6%A1%86%E4%B8%8E%E5%9C%86%E8%A7%92%2F</url>
     <content type="text"><![CDATA[本篇博客主要讲解CSS3的圆角，盒阴影和边界图片。 CSS3圆角border-radius属性此部分内容在博客css效果里面已经介绍过了。 四个值 ：左上角 右上角 右下角 左下角 三个值：左上角 右上角和左下角 右下角 考虑兼容性问题，可以加上前缀。 12345678910div&#123; width: 500px; height: 300px; border: 1px solid black; -webkit-broder-radius: 50%;/*chrome*/ -moz-broder-radius: 50%;/*firefox*/ -ms-broder-radius: 50%;/*IE*/ -o-broder-radius: 50%;/*opera*/ broder-radius: 50%;&#125; 盒阴影 box-shadow此部分内容在博客css效果里面已经介绍过了。 边界图片 border-image使用border-image-*属性来构建美丽的可扩展按钮。 语法：border-image: source slice width outset repeat; border-image-source: 指定要使用的图像 ; border-image-slice: 指定图像的边界向内偏移多少; border-image-width: 指定图像边界的宽度; border-image-outset: 指定在边框的外部绘制border-image-area的量; border-image-repeat: 边界是否应重复repeated，拉伸stretched，或铺满rounded; slice和width是相关联的。个人觉得使用%较好。 1234567div&#123; border-image-source: url("boder.jpg"); border-image-slice: number/%/fill;/*10%*/ border-image-width: number/%/auto;/*auto：自动/自适应*/ border-image-outset: length/number; border-image-repeat: stretch/repeat/round/initial/inherit;/*默认：stretch；inittial：读取默认值；inherit：继承父元素*/&#125;]]></content>
