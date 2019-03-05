@@ -121,12 +121,14 @@
 <meta property="og:description" content="本博客主要介绍CSS3新增选择器">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://woshilishang123.github.io/2019/03/04/css3选择器/liuyifei.jpg">
-<meta property="og:updated_time" content="2019-03-04T13:13:45.892Z">
+<meta property="og:updated_time" content="2019-03-05T07:36:33.940Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="css3选择器">
 <meta name="twitter:description" content="本博客主要介绍CSS3新增选择器">
 <meta name="twitter:image" content="https://woshilishang123.github.io/2019/03/04/css3选择器/liuyifei.jpg">
 
+
+  
 
 
   <link rel="alternate" href="/atom.xml" title="tuzi" type="application/atom+xml">
@@ -428,12 +430,24 @@
                 
               
 
-              <time title="创建时间：2019-03-04 20:04:26 / 修改时间：21:13:45" itemprop="dateCreated datePublished" datetime="2019-03-04T20:04:26+08:00">2019-03-04</time>
+              <time title="创建时间：2019-03-04 20:04:26" itemprop="dateCreated datePublished" datetime="2019-03-04T20:04:26+08:00">2019-03-04</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-03-05 15:36:33" itemprop="dateModified" datetime="2019-03-05T15:36:33+08:00">2019-03-05</time>
               
             
           </span>
@@ -479,7 +493,7 @@
                 
                   <span class="post-meta-item-text">本文字数：</span>
                 
-                <span title="本文字数">2.1k</span>
+                <span title="本文字数">4.6k</span>
               
 
               
@@ -493,7 +507,7 @@
                 
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
-                <span title="阅读时长">2 分钟</span>
+                <span title="阅读时长">4 分钟</span>
               
             </div>
           
@@ -544,7 +558,7 @@
 <p><strong>用户行为伪类</strong></p>
 <p>:hover(鼠标经过), :active(点击时), :focus(获取鼠标)</p>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">a</span><span class="selector-pseudo">:link</span>&#123;</span><br><span class="line">    <span class="attribute">color</span>:<span class="number">#000000</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">a</span><span class="selector-pseudo">:hover</span>&#123;</span><br><span class="line">    <span class="attribute">color</span>:red;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">a</span><span class="selector-pseudo">:active</span>&#123;</span><br><span class="line">    <span class="attribute">color</span>:yellow;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">a</span><span class="selector-pseudo">:visited</span>&#123;</span><br><span class="line">    <span class="attribute">color</span>:<span class="number">#00ffff</span>;</span><br><span class="line">&#125;<span class="comment">/*也可以用于其他元素*/</span></span><br></pre></td></tr></table></figure>
-<h4 id="UI元素状态为类"><a href="#UI元素状态为类" class="headerlink" title="UI元素状态为类"></a>UI元素状态为类</h4><p>我们把“:enabled”(可输入的), “:disabled”(不可输入的), “:checked”(选中的)伪类成为UI元素状态伪类</p>
+<h4 id="UI元素状态伪类"><a href="#UI元素状态伪类" class="headerlink" title="UI元素状态伪类"></a>UI元素状态伪类</h4><p>我们把“:enabled”(可输入的), “:disabled”(不可输入的), “:checked”(选中的)伪类成为UI元素状态伪类</p>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">input</span><span class="selector-pseudo">:enabled</span>&#123;</span><br><span class="line">    <span class="attribute">color</span>:<span class="number">#123456</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">input</span><span class="selector-pseudo">:disabled</span>&#123;</span><br><span class="line">    <span class="attribute">color</span>:<span class="number">#123456</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">input</span><span class="selector-pseudo">:checked</span>&#123;</span><br><span class="line">    <span class="attribute">color</span>:<span class="number">#123456</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"text"</span> <span class="attr">disabled</span>=<span class="string">"disabled"</span>&gt;</span><span class="tag">&lt;/<span class="name">input</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"text"</span> <span class="attr">enable</span>=<span class="string">"enable"</span>&gt;</span><span class="tag">&lt;/<span class="name">input</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"check"</span> <span class="attr">checked</span>=<span class="string">"checked"</span>&gt;</span><span class="tag">&lt;/<span class="name">input</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <h4 id="CSS3结构类"><a href="#CSS3结构类" class="headerlink" title="CSS3结构类"></a>CSS3结构类</h4><p><strong>CSS3的：nth选择器</strong></p>
@@ -552,9 +566,44 @@
 <p><strong>选择方法</strong></p>
 <p>:first-child, :last-child, :nth-child(), :nth-last-child(), :nth-of-type(), </p>
 <p>:nth-last-of-type(), :first-of-type, :last-of-type, :only-child, :only-of type, :empty</p>
-<h5 id="first-child-last-child-nth-child"><a href="#first-child-last-child-nth-child" class="headerlink" title=":first-child, :last-child, :nth-child()"></a>:first-child, :last-child, :nth-child()</h5><p>:first-child：选择属于父元素的<mark>首个子元素</mark>的Element元素，并为其设置样式</p>
+<h5 id="first-child-last-child-nth-child-nth-last-child"><a href="#first-child-last-child-nth-child-nth-last-child" class="headerlink" title=":first-child, :last-child, :nth-child(),:nth-last-child()"></a>:first-child, :last-child, :nth-child(),:nth-last-child()</h5><p><strong>这四个伪类针对子元素，比如div:nth-child()针对div的子元素</strong></p>
+<p>div:first-child：选择属于其父元素的<mark>首个子元素</mark>是div的div元素，并为其设置样式</p>
 <p>:last-child：选择属于父元素的<mark>最后一个子元素</mark>的Element元素，并为其设置样式</p>
 <p>:nth-child(N)：匹配属于其父元素的<mark>第N个子元素</mark>，不论元素的类型。</p>
+<p> :nth-last-child(N)：匹配属于父元素的倒数第N个子元素的每个元素，不论元素的类型，从最后一个元素开始计数。</p>
+<p>扩展：</p>
+<p>第一个元素的下标是1。</p>
+<p>:nth-child(n)：n是一个简单的表达式，取值从“0”开始计算。这里只能是“n”，不能用其他字母替换。</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.demo</span><span class="selector-pseudo">:nth-child(2)</span>&#123;</span><br><span class="line">    <span class="attribute">color</span>:<span class="number">#123456</span>;</span><br><span class="line">&#125;<span class="comment">/*匹配第二个元素*/</span></span><br><span class="line"><span class="selector-class">.demo</span><span class="selector-pseudo">:nth-child(n)</span>&#123;</span><br><span class="line">    <span class="attribute">color</span>:<span class="number">#123456</span>;</span><br><span class="line">&#125;<span class="comment">/*匹配所有元素*/</span></span><br><span class="line">.demo:nth-child(odd/2n+1)&#123;</span><br><span class="line">    <span class="selector-tag">color</span>:<span class="selector-id">#123456</span>;</span><br><span class="line">&#125;<span class="comment">/*匹配奇数元素*/</span></span><br><span class="line">.demo:nth-child(even/2n)&#123;</span><br><span class="line">    <span class="selector-tag">color</span>:<span class="selector-id">#123456</span>;</span><br><span class="line">&#125;<span class="comment">/*匹配偶数元素*/</span></span><br><span class="line"><span class="selector-class">.demo</span><span class="selector-pseudo">:nth-child(3n+1)</span>&#123;</span><br><span class="line">    <span class="attribute">color</span>:<span class="number">#123456</span>;</span><br><span class="line">&#125;<span class="comment">/*3n+1*/</span></span><br><span class="line"><span class="selector-class">.demo</span><span class="selector-pseudo">:nth-child(n</span>*<span class="selector-tag">n</span>)&#123;</span><br><span class="line">    <span class="attribute">color</span>:<span class="number">#123456</span>;</span><br><span class="line">&#125;<span class="comment">/*错误*/</span></span><br></pre></td></tr></table></figure>
+<h5 id="nth-of-type-nth-last-of-type-first-of-type-last-of-type-one-child-only-of-type"><a href="#nth-of-type-nth-last-of-type-first-of-type-last-of-type-one-child-only-of-type" class="headerlink" title=":nth-of-type(), :nth-last-of-type(), :first-of-type, :last-of-type,:one-child, :only-of type"></a>:nth-of-type(), :nth-last-of-type(), :first-of-type, :last-of-type,:one-child, :only-of type</h5><p><strong>这几个伪类针对同名元素，比如div:nth-of-type(N)针对div元素</strong></p>
+<p>div:nth-of-type(N)：匹配属于父元素的<mark>特定类型</mark>（div）第N个子元素（div）的每个元素。所有的属于其父元素（所有元素）第N个div。</p>
+<p> :nth-last-of-type(), :first-of-type, :last-of-type：略</p>
+<p>div:one-child：针对没有兄弟元素的div元素，比如div:only-of type只有一个div但有两个兄弟元素为p，不会被选中</p>
+<p>:only-of type：选择器匹配属于其父元素的特定类型的唯一子元素的每个元素，比如div:only-of type只有一个div但有两个兄弟元素为p，仍会被选中</p>
+<h5 id="empty"><a href="#empty" class="headerlink" title=":empty"></a>:empty</h5><p>:empty选择器匹配没有子元素（包括文本节点）的每个元素</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span><span class="comment">&lt;!--目标元素--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span>&gt;</span>124<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span>&gt;</span><span class="tag">&lt;<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">a</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h4 id="否定选择器（-not）"><a href="#否定选择器（-not）" class="headerlink" title="否定选择器（:not）"></a>否定选择器（:not）</h4><p>:not(ELement/selector)选择器匹配非指定元素/选择器的每个元素。</p>
+<p>语法：父元素:not(子元素/子选择器) ；father:not(chidren/selector)</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span><span class="selector-pseudo">:not(p)</span>&#123;</span><br><span class="line">    <span class="attribute">color</span>:red;</span><br><span class="line">&#125;<span class="comment">/*不选择p*/</span></span><br><span class="line"><span class="selector-tag">a</span><span class="selector-pseudo">:not(last-of-type)</span>&#123;</span><br><span class="line">    <span class="attribute">border-right</span>:<span class="number">1px</span> solid red;</span><br><span class="line">&#125;<span class="comment">/*不选择最后一个a*/</span></span><br></pre></td></tr></table></figure>
+<h4 id="伪元素选择器"><a href="#伪元素选择器" class="headerlink" title="伪元素选择器"></a>伪元素选择器</h4><p>伪元素用于像某些选择器设置特殊效果。</p>
+<p>语法：元素<mark>::</mark>伪元素 / 元素<mark>:</mark>伪元素</p>
+<h5 id="CSS权重"><a href="#CSS权重" class="headerlink" title="CSS权重"></a>CSS权重</h5><p>什么是权重：当很多的规则被应用到某一个元素上时，权重是一个决定哪种规则生效，或者是优先级的过程。</p>
+<p>权重等级与权重：行内样式（1000）&gt;id选择器（100）&gt;类，属性选择器和伪类选择器(10)&gt;元素和伪元素(1)&gt;*(0)</p>
+<p>行内样式：&lt; div style=” “ &gt; &lt; /div &gt;,style里面的样式就是行内样式</p>
+<p>权重相同的连个css样式，后面的会覆盖前面的样式</p>
+<h5 id="first-line"><a href="#first-line" class="headerlink" title="first-line"></a>first-line</h5><p>根据“first-line”伪元素中的样式对元素的<mark>第一行文本</mark>进行格式化/执行css样式。first-line伪元素只能用于块级元素。</p>
+<h5 id="first-letter"><a href="#first-letter" class="headerlink" title="first-letter"></a>first-letter</h5><p>用于向文本的<mark>首字母</mark>设置样式。</p>
+<p>first-letter只能用于块级元素</p>
+<h5 id="before"><a href="#before" class="headerlink" title="before"></a>before</h5><p>在元素的<strong>内容</strong><mark>前面</mark>插入新内容</p>
+<p>常用”content”配合使用</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span><span class="selector-pseudo">::before</span>&#123;</span><br><span class="line">    <span class="attribute">content</span>:<span class="string">"我在内容的前面"</span>;</span><br><span class="line">    <span class="attribute">color</span>:red;</span><br><span class="line">    <span class="attribute">display</span>:block;</span><br><span class="line">    <span class="attribute">border-right</span>:<span class="number">1px</span> solid green;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>特点：父元素（例如demo里的div)的第一个子元素; 是个行级元素； 内容通过content写入，支持所有的css样式；标签里面找不到</p>
+<h5 id="after"><a href="#after" class="headerlink" title="after"></a>after</h5><p>在元素的<strong>内容</strong><mark>后面</mark>插入新内容</p>
+<p>多用于清除浮动</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span><span class="selector-pseudo">::after</span>&#123;</span><br><span class="line">    display= block;</span><br><span class="line">    <span class="selector-tag">content</span>: "";</span><br><span class="line">    <span class="selector-tag">clear</span>: <span class="selector-tag">both</span>;<span class="comment">/*清除浮动*/</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">div</span> &gt; <span class="selector-tag">aisde</span>&#123;</span><br><span class="line">    <span class="attribute">float</span>:left;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">div</span> &gt; <span class="selector-tag">article</span>&#123;</span><br><span class="line">    <span class="attribute">float</span>:right;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">aside</span>&gt;</span>12<span class="tag">&lt;/<span class="name">aside</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">article</span>&gt;</span>123<span class="tag">&lt;/<span class="name">article</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h5 id="selsection"><a href="#selsection" class="headerlink" title="selsection"></a>selsection</h5><p>用于设置浏览器中<strong>选中</strong>文本后的背景色和前景色</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span>&#123;</span><br><span class="line">    <span class="attribute">background</span>: white;</span><br><span class="line">    <span class="attribute">color</span>: black;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">div</span><span class="selector-pseudo">::selection</span>&#123;</span><br><span class="line">    <span class="attribute">background</span>: red;</span><br><span class="line">    <span class="attribute">color</span>: yellow;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
       
     </div>
@@ -850,7 +899,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#基本选择器"><span class="nav-number">1.</span> <span class="nav-text">基本选择器</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#子元素选择器"><span class="nav-number">1.1.</span> <span class="nav-text">子元素选择器</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#相邻兄弟元素选择器"><span class="nav-number">1.2.</span> <span class="nav-text">相邻兄弟元素选择器</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#通用兄弟元素选择器"><span class="nav-number">1.3.</span> <span class="nav-text">通用兄弟元素选择器</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#群组选择器"><span class="nav-number">1.4.</span> <span class="nav-text">群组选择器</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#属性选择器"><span class="nav-number">2.</span> <span class="nav-text">属性选择器</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#ELement-attribute"><span class="nav-number">2.1.</span> <span class="nav-text">ELement[attribute]</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#ELement-attribute-”value”"><span class="nav-number">2.2.</span> <span class="nav-text">ELement[attribute=”value”]</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#ELement-attribute-”value”-1"><span class="nav-number">2.3.</span> <span class="nav-text">ELement[attribute~=”value”]</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#ELement-attribute-”value”-2"><span class="nav-number">2.4.</span> <span class="nav-text">ELement[attribute*=”value”]</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#伪类选择器"><span class="nav-number">3.</span> <span class="nav-text">伪类选择器</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#动态伪类"><span class="nav-number">3.1.</span> <span class="nav-text">动态伪类</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#UI元素状态为类"><span class="nav-number">3.2.</span> <span class="nav-text">UI元素状态为类</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#CSS3结构类"><span class="nav-number">3.3.</span> <span class="nav-text">CSS3结构类</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#first-child-last-child-nth-child"><span class="nav-number">3.3.1.</span> <span class="nav-text">:first-child, :last-child, :nth-child()</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#基本选择器"><span class="nav-number">1.</span> <span class="nav-text">基本选择器</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#子元素选择器"><span class="nav-number">1.1.</span> <span class="nav-text">子元素选择器</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#相邻兄弟元素选择器"><span class="nav-number">1.2.</span> <span class="nav-text">相邻兄弟元素选择器</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#通用兄弟元素选择器"><span class="nav-number">1.3.</span> <span class="nav-text">通用兄弟元素选择器</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#群组选择器"><span class="nav-number">1.4.</span> <span class="nav-text">群组选择器</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#属性选择器"><span class="nav-number">2.</span> <span class="nav-text">属性选择器</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#ELement-attribute"><span class="nav-number">2.1.</span> <span class="nav-text">ELement[attribute]</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#ELement-attribute-”value”"><span class="nav-number">2.2.</span> <span class="nav-text">ELement[attribute=”value”]</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#ELement-attribute-”value”-1"><span class="nav-number">2.3.</span> <span class="nav-text">ELement[attribute~=”value”]</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#ELement-attribute-”value”-2"><span class="nav-number">2.4.</span> <span class="nav-text">ELement[attribute*=”value”]</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#伪类选择器"><span class="nav-number">3.</span> <span class="nav-text">伪类选择器</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#动态伪类"><span class="nav-number">3.1.</span> <span class="nav-text">动态伪类</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#UI元素状态伪类"><span class="nav-number">3.2.</span> <span class="nav-text">UI元素状态伪类</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#CSS3结构类"><span class="nav-number">3.3.</span> <span class="nav-text">CSS3结构类</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#first-child-last-child-nth-child-nth-last-child"><span class="nav-number">3.3.1.</span> <span class="nav-text">:first-child, :last-child, :nth-child(),:nth-last-child()</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#nth-of-type-nth-last-of-type-first-of-type-last-of-type-one-child-only-of-type"><span class="nav-number">3.3.2.</span> <span class="nav-text">:nth-of-type(), :nth-last-of-type(), :first-of-type, :last-of-type,:one-child, :only-of type</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#empty"><span class="nav-number">3.3.3.</span> <span class="nav-text">:empty</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#否定选择器（-not）"><span class="nav-number">3.4.</span> <span class="nav-text">否定选择器（:not）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#伪元素选择器"><span class="nav-number">3.5.</span> <span class="nav-text">伪元素选择器</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#CSS权重"><span class="nav-number">3.5.1.</span> <span class="nav-text">CSS权重</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#first-line"><span class="nav-number">3.5.2.</span> <span class="nav-text">first-line</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#first-letter"><span class="nav-number">3.5.3.</span> <span class="nav-text">first-letter</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#before"><span class="nav-number">3.5.4.</span> <span class="nav-text">before</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#after"><span class="nav-number">3.5.5.</span> <span class="nav-text">after</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#selsection"><span class="nav-number">3.5.6.</span> <span class="nav-text">selsection</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>
@@ -891,7 +940,7 @@
     
       <span class="post-meta-item-text">站点总字数：</span>
     
-    <span title="站点总字数">16k</span>
+    <span title="站点总字数">18k</span>
   
 
   
@@ -902,7 +951,7 @@
     
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
     
-    <span title="站点阅读时长">14 分钟</span>
+    <span title="站点阅读时长">17 分钟</span>
   
 </div>
 
