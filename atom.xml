@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://woshilishang123.github.io/"/>
-  <updated>2019-03-05T07:36:33.940Z</updated>
+  <updated>2019-03-05T08:30:04.722Z</updated>
   <id>https://woshilishang123.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>CSS3边框与圆角</title>
+    <link href="https://woshilishang123.github.io/2019/03/05/css%E8%BE%B9%E6%A1%86%E4%B8%8E%E5%9C%86%E8%A7%92/"/>
+    <id>https://woshilishang123.github.io/2019/03/05/css边框与圆角/</id>
+    <published>2019-03-05T07:42:23.000Z</published>
+    <updated>2019-03-05T08:30:04.722Z</updated>
+    
+    <content type="html"><![CDATA[<p>本篇博客主要讲解CSS3的圆角，盒阴影和边界图片。</p><p><img src="/2019/03/05/css边框与圆角/刘亦菲.jpg" alt="liuyifei" title="liuyifei"></p><a id="more"></a><h3 id="CSS3圆角"><a href="#CSS3圆角" class="headerlink" title="CSS3圆角"></a>CSS3圆角</h3><h4 id="border-radius属性"><a href="#border-radius属性" class="headerlink" title="border-radius属性"></a>border-radius属性</h4><p>此部分内容在博客<a href="https://woshilishang123.github.io/2019/02/26/css%E6%95%88%E6%9E%9C/" style="text-decoration: none">css效果</a>里面已经介绍过了。</p><p>四个值 ：左上角  右上角 右下角 左下角 </p><p>三个值：左上角  右上角和左下角  右下角 </p><p>考虑兼容性问题，可以加上前缀。</p><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span>&#123;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">500px</span>;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">300px</span>;</span><br><span class="line">    <span class="attribute">border</span>: <span class="number">1px</span> solid black;</span><br><span class="line">    <span class="attribute">-webkit-broder-radius</span>: <span class="number">50%</span>;<span class="comment">/*chrome*/</span></span><br><span class="line">       <span class="attribute">-moz-broder-radius</span>: <span class="number">50%</span>;<span class="comment">/*firefox*/</span></span><br><span class="line">    <span class="attribute">-ms-broder-radius</span>: <span class="number">50%</span>;<span class="comment">/*IE*/</span></span><br><span class="line">    <span class="attribute">-o-broder-radius</span>: <span class="number">50%</span>;<span class="comment">/*opera*/</span></span><br><span class="line">    <span class="attribute">broder-radius</span>: <span class="number">50%</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h4 id="盒阴影-box-shadow"><a href="#盒阴影-box-shadow" class="headerlink" title="盒阴影 box-shadow"></a>盒阴影 box-shadow</h4><p>此部分内容在博客<a href="https://woshilishang123.github.io/2019/02/26/css%E6%95%88%E6%9E%9C/" style="text-decoration: none">css效果</a>里面已经介绍过了。</p><h4 id="边界图片-border-image"><a href="#边界图片-border-image" class="headerlink" title="边界图片 border-image"></a>边界图片 border-image</h4><p>使用border-image-*属性来构建美丽的可扩展按钮。</p><p>语法：border-image: source slice width outset repeat;</p><p> border-image-source: 指定要使用的图像 ;<br> border-image-slice: 指定图像的边界向内偏移多少;<br> border-image-width: 指定图像边界的宽度;<br> border-image-outset: 指定在边框的外部绘制border-image-area的量;<br> border-image-repeat:  边界是否应重复repeated，拉伸stretched，或铺满rounded; </p><p>slice和width是相关联的。个人觉得使用%较好。</p><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span>&#123;</span><br><span class="line">    <span class="attribute">border-image-source</span>: <span class="built_in">url</span>(<span class="string">"boder.jpg"</span>);</span><br><span class="line">    <span class="attribute">border-image-slice</span>: number/%/fill;<span class="comment">/*10%*/</span></span><br><span class="line">    <span class="attribute">border-image-width</span>: number/%/auto;<span class="comment">/*auto：自动/自适应*/</span></span><br><span class="line">    <span class="attribute">border-image-outset</span>: length/number;</span><br><span class="line">    <span class="attribute">border-image-repeat</span>: stretch/repeat/round/initial/inherit;<span class="comment">/*默认：stretch；inittial：读取默认值；inherit：继承父元素*/</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;本篇博客主要讲解CSS3的圆角，盒阴影和边界图片。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/2019/03/05/css边框与圆角/刘亦菲.jpg&quot; alt=&quot;liuyifei&quot; title=&quot;liuyifei&quot;&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="CSS3" scheme="https://woshilishang123.github.io/categories/CSS3/"/>
+    
+    
+      <category term="CSS3" scheme="https://woshilishang123.github.io/tags/CSS3/"/>
+    
+      <category term="圆角" scheme="https://woshilishang123.github.io/tags/%E5%9C%86%E8%A7%92/"/>
+    
+  </entry>
   
   <entry>
     <title>css3选择器</title>
