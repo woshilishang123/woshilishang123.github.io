@@ -3,7 +3,14 @@
   <entry>
     <title><![CDATA[css背景与渐变]]></title>
     <url>%2F2019%2F03%2F05%2Fcss%E8%83%8C%E6%99%AF%E4%B8%8E%E6%B8%90%E5%8F%98%2F</url>
-    <content type="text"></content>
+    <content type="text"><![CDATA[本篇博客主要介绍CSS3的背景和渐变新增的部分内容 BackGround属性background-clip属性background-clip属性指定背景绘制区域 语法：background-clip: border-box | padding-box | content-box; 背景绘制区域分别是border/padding/content以内区域 background-origin属性background-origin属性指定background-position属性因该是相对位置 background-origin设置元素背景图片的起始位置 定义背景图片位置，两个值：水平和垂直偏移量 语法：background-origin: border-box | padding-box | content-box; background-size属性background-size属性指定背景图片大小 语法：background-size: length| percentage| cover| contain; background属性整合background: color position size repead origin clip attachment image; 123.demo&#123; background: #123456 center 50% no-repeat content-box content-box fixed url("123.png");&#125;/*不建议这样写*/ CSS3渐变渐变可以在两个或多个指定的颜色之间显示平稳的过渡。 线性渐变沿着一根轴线改变颜色，从起点到终点进行循序渐变（从一边拉向另一边）。 语法：background: linear-gradient(direction.,color-stop1, color-stop2, …); background: linear-gradient(angle, color-stop1, color-stop2, …); 可以设置多个渐变色 direction: to rigiht, to left, to top, to bottom, to right bottom(左上到右下) angle: 0deg(从上到下), 45deg, 90deg(从左到右), 233deg, 180(从下到上)， 270（从右到左) 123456789.demo&#123; background: linear-gradient(to top left, red, yellow, blue); width: 800px; height: 100px; background: linear-gradient(45deg, green, purple, blue); background: linear-gradient(90deg,red 10%, green 50%, purple 75%, blue 100%);/*red：0%~10%*/ background: linear-gradient(90deg,red 0%, green 50%, purple 65%, blue 85%); background: linear-gradient(90deg,rgba(255, 0, 0, 0) , rgba(255,0,0,1);&#125; 第一个颜色默认0%，最后一个颜色默认100%。 重复渐变123demo&#123; background: repeating-linear-gradient(90deg,red 0%, blue 10%, red 20%);&#125; 径向渐变径向渐变(radial-gradients)属性：从起点到终点颜色从内到外进行圆形渐变（从中间往外拉） 语法：background: radial-gradient(center shape size, start-color, …, last-color); shape:ellipse(默认), circle size: closest-side(最近边),farthest-side(最远边),closest-corner(最近角),farthest-cornet(最远角) 重复渐变chrome不支持]]></content>
+      <categories>
+        <category>CSS3</category>
+      </categories>
+      <tags>
+        <tag>CSS3</tag>
+        <tag>背景</tag>
+      </tags>
   </entry>
   <entry>
     <title><![CDATA[CSS3边框与圆角]]></title>

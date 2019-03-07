@@ -112,14 +112,20 @@
   daovoice('update');
   </script>
 
-  <meta property="og:type" content="article">
+  <meta name="description" content="本篇博客主要介绍CSS3的背景和渐变新增的部分内容">
+<meta name="keywords" content="CSS3,背景">
+<meta property="og:type" content="article">
 <meta property="og:title" content="css背景与渐变">
 <meta property="og:url" content="https://woshilishang123.github.io/2019/03/05/css背景与渐变/index.html">
 <meta property="og:site_name" content="tuzi">
+<meta property="og:description" content="本篇博客主要介绍CSS3的背景和渐变新增的部分内容">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-03-05T08:32:41.225Z">
+<meta property="og:image" content="http://img.hb.aicdn.com/eabb88049007b86e6a15c884f94ddd9ae4494ddb6d451-uTdWm7_fw658 " 刘亦菲"="">
+<meta property="og:updated_time" content="2019-03-07T13:01:24.545Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="css背景与渐变">
+<meta name="twitter:description" content="本篇博客主要介绍CSS3的背景和渐变新增的部分内容">
+<meta name="twitter:image" content="http://img.hb.aicdn.com/eabb88049007b86e6a15c884f94ddd9ae4494ddb6d451-uTdWm7_fw658 " 刘亦菲"="">
 
 
 
@@ -426,8 +432,42 @@
             
 
             
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-03-07 21:01:24" itemprop="dateModified" datetime="2019-03-07T21:01:24+08:00">2019-03-07</time>
+              
+            
           </span>
 
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/CSS3/" itemprop="url" rel="index"><span itemprop="name">CSS3</span></a></span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -451,7 +491,7 @@
                 
                   <span class="post-meta-item-text">本文字数：</span>
                 
-                <span title="本文字数">0</span>
+                <span title="本文字数">1.9k</span>
               
 
               
@@ -465,7 +505,7 @@
                 
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
-                <span title="阅读时长">1 分钟</span>
+                <span title="阅读时长">2 分钟</span>
               
             </div>
           
@@ -485,7 +525,89 @@
       
 
       
-        
+        <p>本篇博客主要介绍CSS3的背景和渐变新增的部分内容</p>
+<p><img src="http://img.hb.aicdn.com/eabb88049007b86e6a15c884f94ddd9ae4494ddb6d451-uTdWm7_fw658 &quot;刘亦菲" alt="liuyifei"></p>
+<a id="more"></a>
+<h3 id="BackGround属性"><a href="#BackGround属性" class="headerlink" title="BackGround属性"></a>BackGround属性</h3><h4 id="background-clip属性"><a href="#background-clip属性" class="headerlink" title="background-clip属性"></a>background-clip属性</h4><p>background-clip属性指定背景绘制区域</p>
+<p>语法：background-clip: border-box | padding-box | content-box;</p>
+<p>背景绘制区域分别是border/padding/content以内区域</p>
+<h4 id="background-origin属性"><a href="#background-origin属性" class="headerlink" title="background-origin属性"></a>background-origin属性</h4><p>background-origin属性指定background-position属性因该是相对位置</p>
+<p>background-origin设置元素背景图片的起始位置</p>
+<p>定义背景图片位置，两个值：水平和垂直偏移量</p>
+<p>语法：background-origin: border-box | padding-box | content-box;</p>
+<h4 id="background-size属性"><a href="#background-size属性" class="headerlink" title="background-size属性"></a>background-size属性</h4><p>background-size属性指定背景图片大小</p>
+<p>语法：background-size: length| percentage| cover| contain;</p>
+<h4 id="background属性整合"><a href="#background属性整合" class="headerlink" title="background属性整合"></a>background属性整合</h4><p>background: color position size repead origin clip attachment image;</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.demo</span>&#123;</span><br><span class="line">    <span class="attribute">background</span>: <span class="number">#123456</span> center <span class="number">50%</span> no-repeat content-box content-box fixed <span class="built_in">url</span>(<span class="string">"123.png"</span>);</span><br><span class="line">&#125;<span class="comment">/*不建议这样写*/</span></span><br></pre></td></tr></table></figure>
+<h3 id="CSS3渐变"><a href="#CSS3渐变" class="headerlink" title="CSS3渐变"></a>CSS3渐变</h3><p>渐变可以在两个或多个指定的颜色之间显示平稳的过渡。</p>
+<h4 id="线性渐变"><a href="#线性渐变" class="headerlink" title="线性渐变"></a>线性渐变</h4><p>沿着一根轴线改变颜色，从起点到终点进行循序渐变（从一边拉向另一边）。</p>
+<p>语法：background: linear-gradient(direction.,color-stop1, color-stop2, …);</p>
+<p>background: linear-gradient(angle, color-stop1, color-stop2, …);</p>
+<p>可以设置多个渐变色</p>
+<p>direction: to rigiht, to left, to top, to bottom, to right bottom(左上到右下)</p>
+<p>angle: 0deg(从上到下), 45deg, 90deg(从左到右), 233deg, 180(从下到上)， 270（从右到左)</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.demo</span>&#123;</span><br><span class="line">    <span class="attribute">background</span>: <span class="built_in">linear-gradient</span>(to top left, red, yellow, blue);</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">800px</span>;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">100px</span>;</span><br><span class="line">    <span class="attribute">background</span>: <span class="built_in">linear-gradient</span>(45deg, green, purple, blue);</span><br><span class="line">    <span class="attribute">background</span>: <span class="built_in">linear-gradient</span>(90deg,red 10%, green 50%, purple 75%, blue 100%);<span class="comment">/*red：0%~10%*/</span></span><br><span class="line">    <span class="attribute">background</span>: <span class="built_in">linear-gradient</span>(90deg,red 0%, green 50%, purple 65%, blue 85%);</span><br><span class="line">    <span class="attribute">background</span>: <span class="built_in">linear-gradient</span>(90deg,rgba(255, 0, 0, 0) , <span class="built_in">rgba</span>(255,0,0,1);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<div style="width: 800px; height: 100px; background: linear-gradient(to top left, red, yellow, blue);"></div>
+
+<p><br></p>
+<div style="width: 800px; height: 100px; background: linear-gradient(45deg, green, purple, blue);"></div>
+
+<p><br></p>
+<div style="width: 800px; height: 100px; background: linear-gradient(90deg,red 10%, green 50%, purple 75%, blue 100%);"></div>
+
+<p><br></p>
+<div style="width: 800px; height: 100px; background: linear-gradient(90deg,red 0%, green 50%, purple 65%, blue 85%);"></div>
+
+<p><br></p>
+<p>第一个颜色默认0%，最后一个颜色默认100%。</p>
+<div style="width: 800px; height: 100px; background: linear-gradient(90deg, rgba(255, 0, 0, 0) , rgba(255,0,0,1));"></div>
+
+<h5 id="重复渐变"><a href="#重复渐变" class="headerlink" title="重复渐变"></a>重复渐变</h5><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">demo</span>&#123;</span><br><span class="line">    <span class="attribute">background</span>: <span class="built_in">repeating-linear-gradient</span>(90deg,red 0%, blue 10%, red 20%);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<div style="width: 800px; height: 100px; background: repeating-linear-gradient(90deg,red 0%, blue 10%, red 20%);"></div>
+
+<h4 id="径向渐变"><a href="#径向渐变" class="headerlink" title="径向渐变"></a>径向渐变</h4><p>径向渐变(radial-gradients)属性：从起点到终点颜色从内到外进行圆形渐变（从中间往外拉）</p>
+<p>语法：background: radial-gradient(center shape size, start-color, …, last-color);</p>
+<p>shape:ellipse(默认), circle</p>
+<div style="width: 200px;
+            height: 200px;
+            background: -webkit-radial-gradient(circle, red, blue);
+            background: radial-gradient(circle, red,yellow, green, blue);"></div><br><br><br><div style="width: 200px;
+            height: 200px;
+            background: -webkit-radial-gradient(ellipse, red, yellow, green, blue);
+            background: radial-gradient(ellipse, red,yellow, green, blue);"></div>
+
+<p>size: closest-side(最近边),farthest-side(最远边),closest-corner(最近角),farthest-cornet(最远角)</p>
+<div style="width: 200px;
+            height: 200px;
+            background: -webkit-radial-gradient(closest-side, red, blue);
+            background: radial-gradient(closest-side, red,yellow, green, blue);"></div>
+
+<p><br></p>
+<div style="width: 200px;
+            height: 200px;
+            background: -webkit-radial-gradient(closest-corner, red, blue);
+            background: radial-gradient(closest-corner, red,yellow, green, blue);"></div>
+
+<p><br></p>
+<div style="width: 200px;
+            height: 200px;
+            background: -webkit-radial-gradient(farthest-side, red, blue);
+            background: radial-gradient(farthest-side, red,yellow, green, blue);"></div>
+
+<p><br></p>
+<div style="width: 200px;
+            height: 200px;
+            background: -webkit-radial-gradient(30% 70%, farthest-corner, red, blue);
+            background: radial-gradient(30% 70%, farthest-corner, red, blue);"></div>
+
+
+
+<h5 id="重复渐变-1"><a href="#重复渐变-1" class="headerlink" title="重复渐变"></a>重复渐变</h5><div style="width: 200px;
+            height: 200px;
+            background: -webkit-repeating-radial-gradient(red 0%, blue 15% ,red 30);
+            background: repeating-radial-gradient(red 0%, blue 15% ,red 30);">chrome不支持</div>
+
+
       
     </div>
 
@@ -534,6 +656,14 @@
     
 
     <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/CSS3/" rel="tag"><i class="fa fa-tag"></i> CSS3</a>
+          
+            <a href="/tags/背景/" rel="tag"><i class="fa fa-tag"></i> 背景</a>
+          
+        </div>
       
 
       
@@ -597,8 +727,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
@@ -671,7 +810,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">13</span>
+                      
+                    
+                    <span class="site-state-item-count">14</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>
@@ -755,6 +896,23 @@
       </div>
 
       
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#BackGround属性"><span class="nav-number">1.</span> <span class="nav-text">BackGround属性</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#background-clip属性"><span class="nav-number">1.1.</span> <span class="nav-text">background-clip属性</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#background-origin属性"><span class="nav-number">1.2.</span> <span class="nav-text">background-origin属性</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#background-size属性"><span class="nav-number">1.3.</span> <span class="nav-text">background-size属性</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#background属性整合"><span class="nav-number">1.4.</span> <span class="nav-text">background属性整合</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#CSS3渐变"><span class="nav-number">2.</span> <span class="nav-text">CSS3渐变</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#线性渐变"><span class="nav-number">2.1.</span> <span class="nav-text">线性渐变</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#重复渐变"><span class="nav-number">2.1.1.</span> <span class="nav-text">重复渐变</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#径向渐变"><span class="nav-number">2.2.</span> <span class="nav-text">径向渐变</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#重复渐变-1"><span class="nav-number">2.2.1.</span> <span class="nav-text">重复渐变</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
+      
 
       
         <div class="back-to-top">
@@ -789,7 +947,7 @@
     
       <span class="post-meta-item-text">站点总字数：</span>
     
-    <span title="站点总字数">19k</span>
+    <span title="站点总字数">21k</span>
   
 
   
@@ -800,7 +958,7 @@
     
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
     
-    <span title="站点阅读时长">18 分钟</span>
+    <span title="站点阅读时长">19 分钟</span>
   
 </div>
 
