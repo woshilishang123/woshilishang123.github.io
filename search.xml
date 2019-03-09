@@ -1,6 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[javaScript对象]]></title>
+    <url>%2F2019%2F03%2F09%2FjavaScript%E5%AF%B9%E8%B1%A1%2F</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
+    <title><![CDATA[JavaScript HTML DOM事件]]></title>
+    <url>%2F2019%2F03%2F09%2FjavaScriptDOM%2F</url>
+    <content type="text"><![CDATA[本篇博客主要讲解HTML DOM（文档对象模型） HTML DOM （文档对象模型）当网页被加载时，浏览器会创建页面的文档对象模型（Document Object Model）。 HTML DOM 模型被构造为对象的树。 JavaScript能够创建动态的HTML JavaScript 能够改变页面中的所有 HTML 元素 JavaScript 能够改变页面中的所有 HTML 属性 JavaScript 能够改变页面中的所有 CSS 样式 JavaScript 能够对页面中的所有事件做出反应 查找 HTML 元素通常，通过 JavaScript，您需要操作 HTML 元素。 为了做到这件事情，您必须首先找到该元素。有三种方法来做这件事： 通过 id 找到 HTML 元素 通过标签名找到 HTML 元素 通过类名找到 HTML 元素 123var x=document.getElementById("main");var z=document.getElementsByClassName("main");var y=document.getElementsByTagName("p"); DOM HTMLHTML DOM 允许 JavaScript 改变 HTML 元素的内容。 改变 HTML 输出流1document.write(Date());//输出时间 提示：绝不要使用在文档加载之后使用 document.write()。这会覆盖该文档。 改变 HTML 内容修改 HTML 内容的最简单的方法时使用 innerHTML 属性。 如需改变 HTML 元素的内容，请使用这个语法： 12document.getElementById(id).innerHTML=new HTML;document.getElementById("p1").innerHTML="New text!"; 改变 HTML 属性如需改变 HTML 元素的属性，请使用这个语法： 12document.getElementById(id).attribute=new value;document.getElementById("image").src="landscape.jpg"; DOM CSS改变 HTML 样式如需改变 HTML 元素的样式，请使用这个语法： 12document.getElementById(id).style.property=new style;document.getElementById("p2").style.color="blue"; HTML DOM Style 对象参考手册 DOM 事件HTML DOM 使 JavaScript 有能力对 HTML 事件做出反应。 对事件做出反应我们可以在事件发生时执行 JavaScript，比如当用户在 HTML 元素上点击时。 如需在用户点击某个元素时执行代码，请向一个 HTML 事件属性添加 JavaScript 代码： 1onclick=JavaScript HTML 事件的例子： 当用户点击鼠标时 当网页已加载时 当图像已加载时 当鼠标移动到元素上时 当输入字段被改变时 当提交 HTML 表单时 当用户触发按键时 1document.getElementById("myBtn").onclick=function()&#123;displayDate()&#125;; onload 和 onunload 事件onload 和 onunload 事件会在用户进入或离开页面时被触发。 onload 事件可用于检测访问者的浏览器类型和浏览器版本，并基于这些信息来加载网页的正确版本。 onload 和 onunload 事件可用于处理 cookie。 1&lt;body onload="checkCookies()"&gt; onchange 事件onchange 事件常结合对输入字段的验证来使用。 下面是一个如何使用 onchange 的例子。当用户改变输入字段的内容时，会调用 function() 函数。 12345678&lt;div&gt; &lt;input type="text" id="fname" onchange="myFunction()&#123; var x=document.getElementById("fname"); x.value=x.value.toUpperCase(); &#125;"&gt; &lt;p&gt;当您离开输入字段时，会触发将输入文本转换为大写的函数。&lt;/p&gt;&lt;/div&gt; onmouseover 和 onmouseout 事件onmouseover 和 onmouseout 事件可用于在用户的鼠标移至 HTML 元素上方或移出元素时触发函数。 onmousedown、onmouseup 以及 onclick 事件onmousedown, onmouseup 以及 onclick 构成了鼠标点击事件的所有部分。首先当点击鼠标按钮时，会触发 onmousedown 事件，当释放鼠标按钮时，会触发 onmouseup 事件，最后，当完成鼠标点击时，会触发 onclick 事件。 DOM 节点添加和删除节点（HTML 元素）。 创建新的 HTML 元素如需向 HTML DOM 添加新元素，您必须首先创建该元素（元素节点），然后向一个已存在的元素追加该元素。 1234567891011121314&lt;div id="div1"&gt; &lt;p id="p1"&gt;这是一个段落&lt;/p&gt; &lt;p id="p2"&gt;这是另一个段落&lt;/p&gt;&lt;/div&gt;&lt;script&gt; var para=document.createElement("p");//创建新的 &lt;p&gt; 元素： var node=document.createTextNode("这是新段落。");//如需向 &lt;p&gt; 元素添加文本，您必须首先创建文本节点。这段代码创建了一个文本节点： para.appendChild(node);//向 &lt;p&gt; 元素追加这个文本节点： //向一个已有的元素追加这个新元素。 var element=document.getElementById("div1");//找到一个已有的元素： element.appendChild(para);//向这个已有的元素追加新元素：&lt;/script&gt; 删除已有的 HTML 元素如需删除 HTML 元素，您必须首先获得该元素的父元素： 12345678910&lt;div id="div1"&gt; &lt;p id="p1"&gt;这是一个段落。&lt;/p&gt; &lt;p id="p2"&gt;这是另一个段落。&lt;/p&gt;&lt;/div&gt;&lt;script&gt; var parent=document.getElementById("div1"); var child=document.getElementById("p1"); parent.removeChild(child);&lt;/script&gt;]]></content>
+      <categories>
+        <category>JavaScript</category>
+      </categories>
+      <tags>
+        <tag>JavaScript</tag>
+        <tag>DOM事件</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[JavaScript简介]]></title>
+    <url>%2F2019%2F03%2F09%2FjavaScript%E7%AE%80%E4%BB%8B%2F</url>
+    <content type="text"><![CDATA[JavaScript是世界上最流行的脚本语言！ JavaScript 是一种脚本，一门编程语言，它可以在网页上实现复杂的功能，网页展现给你的不再是简单的静态信息，而是实时的内容更新，交互式的地图，2D/3D 动画，滚动播放的视频等等。 您将学到什么JavaScript：写入 HTML 输出12document.write("&lt;h1&gt;This is a heading&lt;/h1&gt;");document.write("&lt;p&gt;This is a paragraph&lt;/p&gt;"); 提示：您只能在 HTML 输出中使用 document.write。如果您在文档加载后使用该方法，会覆盖整个文档。 JavaScript：对事件作出反应1&lt;button type="button" onclick="alert('Welcome!')"&gt;点击这里&lt;/button&gt; alert() 函数在 JavaScript 中并不常用，但它对于代码测试非常方便。 onclick 事件只是您即将在本教程中学到的众多事件之一。 JavaScript：改变 HTML 内容使用 JavaScript 来处理 HTML 内容是非常强大的功能。 12x=document.getElementById("demo") //查找元素x.innerHTML="Hello JavaScript"; //改变内容 您会经常看到 document.getElementByID(“some id“)。这个方法是 HTML DOM 中定义的。 DOM（文档对象模型）是用以访问 HTML 元素的正式 W3C 标准。 您将在本教程的多个章节中学到有关 HTML DOM 的知识。 JavaScript：改变 HTML 图像本例会动态地改变 HTML &lt; image&gt; 的来源 (src)： The Light bulb 点击灯泡就可以打开或关闭这盏灯 亲自试一试 JavaScript 能够改变任意 HTML 元素的大多数属性，而不仅仅是图片。 JavaScript：改变 HTML 样式改变 HTML 元素的样式，属于改变 HTML 属性的变种。 12x=document.getElementById("demo") //找到元素x.style.color="#ff0000"; //改变样式 JavaScript：验证输入JavaScript 常用于验证用户的输入。 1if isNaN(x) &#123;alert("Not Numeric")&#125;; 您知道吗？提示：JavaScript 与 Java 是两种完全不同的语言，无论在概念还是设计上。 Java（由 Sun 发明）是更复杂的编程语言。 ECMA-262 是 JavaScript 标准的官方名称。 JavaScript 由 Brendan Eich 发明。它于 1995 年出现在 Netscape 中（该浏览器已停止更新），并于 1997 年被 ECMA（一个标准协会）采纳。]]></content>
+      <categories>
+        <category>JavaScript</category>
+      </categories>
+      <tags>
+        <tag>JavaScript</tag>
+        <tag>简介</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[css3转换（tranform）]]></title>
     <url>%2F2019%2F03%2F08%2Fcss3%E8%BD%AC%E6%8D%A2%2F</url>
     <content type="text"><![CDATA[本篇博客主要讲解CSS3转换，它包括2d转换，3d转换。 CSS3 2D转换在部分中，您将学到如下 2D 转换方法： translate() rotate() scale() skew() translate() 方法通过 translate() 方法，元素从其当前位置移动，根据给定的 left（x 坐标） 和 top（y 坐标） 位置参数： 123456789div&#123;transform: translate(50px,100px);-ms-transform: translate(50px,100px); /* IE 9 */-webkit-transform: translate(50px,100px); /* Safari and Chrome */-o-transform: translate(50px,100px); /* Opera */-moz-transform: translate(50px,100px); /* Firefox *//*值 translate(50px,100px) 把元素从左侧移动 50 像素，从顶端移动 100 像素。*/&#125; rotate() 方法通过 rotate() 方法，元素顺时针旋转给定的角度。允许负值，元素将逆时针旋转。 123div&#123; tranform: rotate(30deg);/*值 rotate(30deg) 把元素顺时针旋转 30 度。*/&#125; scale() 方法通过 scale() 方法，元素的尺寸会增加或减少，根据给定的宽度（X 轴）和高度（Y 轴）参数： 123div&#123; transform: scale(2,4);;/*值 scale(2,4) 把宽度转换为原始尺寸的 2 倍，把高度转换为原始高度的 4 倍。*/&#125; skew() 方法通过 skew() 方法，元素翻转给定的角度，根据给定的水平线（X 轴）和垂直线（Y 轴）参数： 123div&#123; tranform: skew(30deg,20deg);/*值 skew(30deg,20deg) 围绕 X 轴把元素翻转 30 度，围绕 Y 轴翻转 20 度。*/&#125; CSS3 3D转换在本章中，您将学到其中的一些 3D 转换方法： translate3d() rotate3d() scale3d() skew3d() matrix3d() rotateX()方法rotateX/Y/Z() 方法通过 rotateX() 方法，元素围绕其 X 轴以给定的度数进行旋转。 123456div&#123; transform: rotateX(120deg); -webkit-transform: rotateX(120deg); /* Safari 和 Chrome */ -moz-transform: rotateX(120deg); /* Firefox */&#125; 通过 rotateY() 方法，元素围绕其 Y 轴以给定的度数进行旋转。 123456div&#123; transform: rotateY(130deg); -webkit-transform: rotateY(130deg); /* Safari 和 Chrome */ -moz-transform: rotateY(130deg); /* Firefox */&#125; 总方法rotate3d(x,y,z,angle);参数不允许省略 其他3D属性略]]></content>
