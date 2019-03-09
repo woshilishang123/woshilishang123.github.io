@@ -1,9 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[javaScript对象]]></title>
+    <title><![CDATA[JavaScript对象]]></title>
     <url>%2F2019%2F03%2F09%2FjavaScript%E5%AF%B9%E8%B1%A1%2F</url>
-    <content type="text"></content>
+    <content type="text"><![CDATA[JavaScript 中的所有事物都是对象：字符串、数值、数组、函数… 此外，JavaScript 允许自定义对象。 未完待续]]></content>
+      <categories>
+        <category>JavaScript</category>
+      </categories>
+      <tags>
+        <tag>JavaScript</tag>
+        <tag>对象</tag>
+      </tags>
   </entry>
   <entry>
     <title><![CDATA[JavaScript HTML DOM事件]]></title>

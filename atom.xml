@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://woshilishang123.github.io/"/>
-  <updated>2019-03-09T02:59:02.440Z</updated>
+  <updated>2019-03-09T03:08:09.593Z</updated>
   <id>https://woshilishang123.github.io/</id>
   
   <author>
@@ -17,16 +17,28 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>javaScript对象</title>
+    <title>JavaScript对象</title>
     <link href="https://woshilishang123.github.io/2019/03/09/javaScript%E5%AF%B9%E8%B1%A1/"/>
     <id>https://woshilishang123.github.io/2019/03/09/javaScript对象/</id>
     <published>2019-03-09T02:59:02.000Z</published>
-    <updated>2019-03-09T02:59:02.440Z</updated>
+    <updated>2019-03-09T03:08:09.593Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong>JavaScript 中的所有事物都是对象：字符串、数值、数组、函数…</strong></p><p><strong>此外，JavaScript 允许自定义对象。</strong></p><p><img src="/2019/03/09/javaScript对象/liuyifei.jpg" alt="titu" title="题图"></p><a id="more"></a><p>未完待续</p>]]></content>
     
     <summary type="html">
     
+      &lt;p&gt;&lt;strong&gt;JavaScript 中的所有事物都是对象：字符串、数值、数组、函数…&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;此外，JavaScript 允许自定义对象。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/2019/03/09/javaScript对象/liuyifei.jpg&quot; alt=&quot;titu&quot; title=&quot;题图&quot;&gt;&lt;/p&gt;
+    
     </summary>
     
+      <category term="JavaScript" scheme="https://woshilishang123.github.io/categories/JavaScript/"/>
+    
+    
+      <category term="JavaScript" scheme="https://woshilishang123.github.io/tags/JavaScript/"/>
+    
+      <category term="对象" scheme="https://woshilishang123.github.io/tags/%E5%AF%B9%E8%B1%A1/"/>
     
   </entry>
   
