@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://woshilishang123.github.io/"/>
-  <updated>2019-03-27T12:45:28.993Z</updated>
+  <updated>2019-03-27T12:58:29.721Z</updated>
   <id>https://woshilishang123.github.io/</id>
   
   <author>
@@ -17,16 +17,27 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>BootStrap2</title>
+    <title>BootStrap（二）组件</title>
     <link href="https://woshilishang123.github.io/2019/03/27/BootStrap2/"/>
     <id>https://woshilishang123.github.io/2019/03/27/BootStrap2/</id>
     <published>2019-03-27T12:45:28.000Z</published>
-    <updated>2019-03-27T12:45:28.993Z</updated>
+    <updated>2019-03-27T12:58:29.721Z</updated>
+    
+    <content type="html"><![CDATA[<p>bootstrap无数可复用的组件，包括字体图标、下拉菜单、导航、警告框、弹出框等更多功能</p><p><img src="http://img.hb.aicdn.com/dafba2f5d9a96fb88858893d88b1d050c2750a2ea2ce-eavhIb_fw658" alt="liuyifei" title="logo"></p><a id="more"></a>]]></content>
     
     <summary type="html">
     
+      &lt;p&gt;bootstrap无数可复用的组件，包括字体图标、下拉菜单、导航、警告框、弹出框等更多功能&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://img.hb.aicdn.com/dafba2f5d9a96fb88858893d88b1d050c2750a2ea2ce-eavhIb_fw658&quot; alt=&quot;liuyifei&quot; title=&quot;logo&quot;&gt;&lt;/p&gt;
+    
     </summary>
     
+      <category term="BootStrap" scheme="https://woshilishang123.github.io/categories/BootStrap/"/>
+    
+    
+      <category term="前端" scheme="https://woshilishang123.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+      <category term="BootStrap" scheme="https://woshilishang123.github.io/tags/BootStrap/"/>
     
   </entry>
   

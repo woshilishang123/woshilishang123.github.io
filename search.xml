@@ -1,9 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[BootStrap2]]></title>
+    <title><![CDATA[BootStrap（二）组件]]></title>
     <url>%2F2019%2F03%2F27%2FBootStrap2%2F</url>
-    <content type="text"></content>
+    <content type="text"><![CDATA[bootstrap无数可复用的组件，包括字体图标、下拉菜单、导航、警告框、弹出框等更多功能]]></content>
+      <categories>
+        <category>BootStrap</category>
+      </categories>
+      <tags>
+        <tag>前端</tag>
+        <tag>BootStrap</tag>
+      </tags>
   </entry>
   <entry>
     <title><![CDATA[BootStrap（一）-全局CSS样式（前半部分）]]></title>
