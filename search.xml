@@ -1,6 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[MATLAB-模拟退火算法]]></title>
+    <url>%2F2019%2F05%2F26%2FMATLAB-%E6%A8%A1%E6%8B%9F%E9%80%80%E7%81%AB%E7%AE%97%E6%B3%95%2F</url>
+    <content type="text"><![CDATA[模拟退火算法（Simulate Anneal，SA）是一种通用概率演算法，用来在一个大的搜寻空间内找寻命题的最优解 模拟退火算法原理 &emsp;&emsp;模拟退火(Simulated Annealing简称SA)算法是基于蒙特卡罗迭代算法求解的一种启发式随机搜索算法，算法思想最早在1953年由N·Metropolis等人提出的。算法出发点是物理学中的退火过程，即对固体物质进行退火处理时，通常足先将它加温，使其粒了可自由运动，然后降温，粒子逐渐形成低能态的品体，若在凝结点附近温度下得足够慢，则固体物质一定会形成域低能量的基态。&emsp;&emsp; 模拟退火算法的基本思想是从一个给定解开始，从邻域中随机产生另一个解，接受Metropolis准则允许目标函数在有限范围内变坏，它由控制参数t决定，其作用类似于物理过程中的温度T,对于控制参数的每一取值，算法持续进行“产生-判断-接受或舍去”的迭代过程，对应着固体在某一恒定温度下的趋于热平衡的过程，当控制参数逐渐减小并趋于0时，系统越来越趋于平衡态，最后系统状态对应于优化问题的全局最优解。 模拟退火算法流程（1） 给定模型每一个参数变化范围， 在这个范围内随机选择一个初始模型m0， 并计算相应的目标函数值 E(m0) 。 （2） 对当前模型进行扰动产生一个新模型 m， 计算相应的目标函数值E(m)， 得到 ∆ E = E(m)-E(m0). （3） 若 ∆E&lt;0， 则新模型被接受； 若∆E&gt;0， 则新模型 m 按概率P= exp(∆ E/T)进行接受，T为温度。当模型被接受时， 置m0=m,E(m0)=E(m)。 （4） 在温度T下， 重复一定次数的扰动和接受过程， 即重复步骤（2）、（3）。 （5） 缓慢降低温度 T 。 （6） 重复步骤（2）、（5）， 直至收敛条件满足为止。 非线性规划方程求解题目12345678910min f(x)=x1^2+x2^2+8 st. x1^2-x2&gt;=0 -x1-x2^2+2=0 x1,x2&gt;=0 MATLAB代码123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566clearclc %生成初始解sol_new2=1;%（1）解空间（初始解）sol_new1=2-sol_new2^2;sol_current1 = sol_new1; sol_best1 = sol_new1;sol_current2 = sol_new2; sol_best2 = sol_new2;E_current = inf;E_best = inf; rand('state',sum(clock)); %初始化随机数发生器t=90; %初始温度tf=89.9; %结束温度a = 0.99; %温度下降比例 while t&gt;=tf%（7）结束条件 for r=1:1000 %退火次数 %产生随机扰动（3）新解的产生 sol_new2=sol_new2+rand*0.2; sol_new1=2-sol_new2^2; %检查是否满足约束 if sol_new1^2-sol_new2&gt;=0 &amp;&amp; -sol_new1-sol_new2^2+2==0 &amp;&amp; sol_new1&gt;=0 &amp;&amp;sol_new2&gt;=0 else sol_new2=rand*2; sol_new1=2-sol_new2^2; continue; end %退火过程 E_new=sol_new1^2+sol_new2^2+8;%（2）目标函数 if E_new&lt;E_current%（5）接受准则 E_current=E_new; sol_current1=sol_new1; sol_current2=sol_new2; if E_new&lt;E_best %把冷却过程中最好的解保存下来 E_best=E_new; sol_best1=sol_new1; sol_best2=sol_new2; end else if rand&lt;exp(-(E_new-E_current)/t)%（4）代价函数差 E_current=E_new; sol_current1=sol_new1; sol_current2=sol_new2; else sol_new1=sol_current1; sol_new2=sol_current2; end end plot(r,E_best,'*') hold on end t=t*a;%（6）降温end disp('最优解为：')disp(sol_best1)disp(sol_best2)disp('目标表达式的最小值等于：')disp(E_best) 运行结果1234567最优解为： 1.0053 0.9974目标表达式的最小值等于： 10.0053]]></content>
+      <categories>
+        <category>MATLAB</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[scrapy简介]]></title>
+    <url>%2F2019%2F05%2F04%2Fscrapy%E7%AE%80%E4%BB%8B%2F</url>
+    <content type="text"><![CDATA[]]></content>
+      <categories>
+        <category>scrapy</category>
+      </categories>
+  </entry>
+  <entry>
     <title><![CDATA[ES6扩展]]></title>
     <url>%2F2019%2F04%2F29%2FES6%E6%89%A9%E5%B1%95%2F</url>
     <content type="text"></content>
