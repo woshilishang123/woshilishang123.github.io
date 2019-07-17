@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://woshilishang123.github.io/"/>
-  <updated>2019-07-16T07:57:52.851Z</updated>
+  <updated>2019-07-17T03:36:42.248Z</updated>
   <id>https://woshilishang123.github.io/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>算法导论思考题一</title>
+    <link href="https://woshilishang123.github.io/2019/07/17/%E7%AE%97%E6%B3%95%E5%AF%BC%E8%AE%BA%E6%80%9D%E8%80%83%E9%A2%98%E4%B8%80/"/>
+    <id>https://woshilishang123.github.io/2019/07/17/算法导论思考题一/</id>
+    <published>2019-07-17T03:14:20.000Z</published>
+    <updated>2019-07-17T03:36:42.248Z</updated>
+    
+    <content type="html"><![CDATA[<p>最近，开始学习《算法导论》，书中每章节都有些许思考题，而书上空白区域有限，遂打算将思考题及其答案贴在博客里面。</p><p>照例刘亦菲开头</p><p><img src="https://hbimg.huabanimg.com/efb5619ab695d5340970a9a7f7c59b9dd80b0d6622f53-L44rvE_fw658" alt="titu"></p><a id="more"></a><h3 id="第一部分"><a href="#第一部分" class="headerlink" title="第一部分"></a>第一部分</h3><h4 id="1-1"><a href="#1-1" class="headerlink" title="1.1"></a>1.1</h4><p><strong>题目一：给出现实生活中需要排序的一个例子或者现实生活中需要计算凸壳的一个例子。</strong></p><p><strong>解：</strong> 成绩排名，凸壳暂时没想到。</p><p><strong>题目二：除速度外，在真实环境中还可能使用哪些其他有关效率的量度？</strong></p><p><strong>解：</strong> 时间？？？</p><p><strong>题目三：选择一种你已知的数据结构，并讨论其优势和局限。</strong></p><p><strong>解：</strong> 单链表 随机存取和查找效率低。</p><p><strong>题目四：前面给出的最短路径与旅行商问题有哪些相似之处？又有哪些不同？</strong></p><p><strong>解：</strong> 相似：求解最优路径；不同：前置是寻找两点之间的最短路径，后置是寻找从起始点开始遍历所里节点的最优路径。</p><p><strong>问题五：提供一个现实生活的问题，其中只有最佳解才行。然后提供一个问题，其中近似最佳的一个解也足够好。</strong></p><p><strong>解：</strong> 销售状元和TSP问题。</p><p>碎碎念：看了这几个简单问题，发现自己脑袋里面真的没什么东西。加油吧！</p><h3 id="未完待续。。。。"><a href="#未完待续。。。。" class="headerlink" title="未完待续。。。。"></a>未完待续。。。。</h3>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;最近，开始学习《算法导论》，书中每章节都有些许思考题，而书上空白区域有限，遂打算将思考题及其答案贴在博客里面。&lt;/p&gt;
+&lt;p&gt;照例刘亦菲开头&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://hbimg.huabanimg.com/efb5619ab695d5340970a9a7f7c59b9dd80b0d6622f53-L44rvE_fw658&quot; alt=&quot;titu&quot;&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="算法导论" scheme="https://woshilishang123.github.io/categories/%E7%AE%97%E6%B3%95%E5%AF%BC%E8%AE%BA/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>vue笔记-基础篇（一）</title>
@@ -427,20 +449,6 @@
       <category term="HTML5" scheme="https://woshilishang123.github.io/tags/HTML5/"/>
     
       <category term="表单" scheme="https://woshilishang123.github.io/tags/%E8%A1%A8%E5%8D%95/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>html5表单</title>
-    <link href="https://woshilishang123.github.io/2019/03/02/html5%E8%A1%A8%E5%8D%95/"/>
-    <id>https://woshilishang123.github.io/2019/03/02/html5表单/</id>
-    <published>2019-03-02T11:55:54.000Z</published>
-    <updated>2019-03-02T11:55:54.606Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
     
   </entry>
   
